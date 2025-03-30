@@ -1,0 +1,576 @@
+---
+title: 'Relaxation & Wellness | Code Stitch Web Designs'
+description: 'Meta description for the page'
+preloadImg: '/assets/images/cabinets2.jpg'
+permalink: 'relaxation-wellness/'
+eleventyNavigation:
+    key: Relaxation & Wellness
+    order: 3300
+    parent: Massages
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/massages.css">
+    <link rel="preload" as="image" href="{% getUrl "/assets/images/banner.jpg" | resize({width: 2560, height: 1136}) | avif %}">
+{% endblock %}
+
+{% block body %}
+
+<!-- ============================================ -->
+<!--                    LANDING                   -->
+<!-- ============================================ -->
+
+<section id="int-hero">
+    <h1 id="home-h">Relaxation & Wellness</h1>
+    <picture>
+        <source media="(max-width: 600px)" srcset="/assets/images/banner-m.webp">
+        <source media="(min-width: 601px)" srcset="/assets/images/banner.webp">
+        <img aria-hidden="true" decoding="async" src="/assets/images/banner.jpg" alt="massage" loading="eager" width="2500" height="1667">
+    </picture>
+</section>
+
+<!-- ============================================ -->
+<!--                  Menu Group                  -->
+<!-- ============================================ -->
+
+<div id="cs-menu-group-1037">
+    <div class="cs-container">
+        <div class="cs-content">
+            <picture class="cs-icon-wrapper">
+                <img class="cs-icon" decoding="async" src="/assets/svgs/logo-black.svg" alt="divider" width="181" height="36" aria-hidden="true">
+            </picture>
+            <h2 class="cs-title">Our Menu</h2>
+            <div class="cs-button-group">
+                <button class="cs-button cs-active" data-filter="one" onclick="window.location.href='#cs-menu-group';">
+                    60 mins
+                </button>
+                <button class="cs-button" data-filter="two" onclick="window.location.href='#cs-menu-group';">
+                    90 mins
+                </button>
+            </div>
+        </div>
+        <!--60 mins-->
+        <div id="cs-menu1-1037" class="cs-menu-group" data-category="one">
+            <!--60 mins Section 1-->
+            <section class="cs-menu">
+                <div class="cs-container">
+                    <ul class="cs-card-group">
+                        <li class="cs-item">
+                            <picture class="cs-picture">
+                                <!--Mobile Image -->
+                                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/17.jpg" | resize({width: 152, height: 152}) | avif %}" type="image/avif">
+                                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/17.jpg" | resize({width: 152, height: 152}) | webp %}" type="image/webp">
+                                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/17.jpg" | resize({width: 152, height: 152}) | jpeg %}" type="image/jpeg">
+                                <!--Tablet Image -->
+                                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/17.jpg" | resize({width: 288, height: 288}) | avif %}" type="image/avif">
+                                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/17.jpg" | resize({width: 288, height: 288}) | webp %}" type="image/webp">
+                                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/14.jpg" | resize({width: 288, height: 288}) | jpeg %}" type="image/jpeg">
+                                <!--Desktop Image -->
+                                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/17.jpg" | resize({width: 320, height: 320}) | avif %}" type="image/avif">
+                                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/17.jpg" | resize({width: 320, height: 320}) | webp %}" type="image/webp">
+                                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/17.jpg" | resize({width: 320, height: 320}) | jpeg %}" type="image/jpeg">
+                                <img src="{% getUrl "/assets/images/17.jpg" | resize({width: 320, height: 320}) | jpeg %}" alt="massage" width="160" height="160" loading="lazy" decoding="async" aria-hidden="true">
+                                </picture>
+                                <div class="cs-info">
+                                <h3 class="cs-h3">
+                                    <span class="cs-name">Wellness Hot Stone</span>
+                                    <span class="cs-price">
+                                        £70
+                                    </span>
+                                </h3>
+                                <p class="cs-item-p">
+                                    Therapeutic orange salt and jade stones for elderly, pregnant women and those seeking stress relief.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="cs-item">
+                            <picture class="cs-picture">
+                                <!--Mobile Image -->
+                                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/14.jpg" | resize({width: 152, height: 152}) | avif %}" type="image/avif">
+                                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/14.jpg" | resize({width: 152, height: 152}) | webp %}" type="image/webp">
+                                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/14.jpg" | resize({width: 152, height: 152}) | jpeg %}" type="image/jpeg">
+                                <!--Tablet Image -->
+                                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/14.jpg" | resize({width: 288, height: 288}) | avif %}" type="image/avif">
+                                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/14.jpg" | resize({width: 288, height: 288}) | webp %}" type="image/webp">
+                                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/14.jpg" | resize({width: 288, height: 288}) | jpeg %}" type="image/jpeg">
+                                <!--Desktop Image -->
+                                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/14.jpg" | resize({width: 320, height: 320}) | avif %}" type="image/avif">
+                                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/14.jpg" | resize({width: 320, height: 320}) | webp %}" type="image/webp">
+                                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/14.jpg" | resize({width: 320, height: 320}) | jpeg %}" type="image/jpeg">
+                                <img src="{% getUrl "/assets/images/14.jpg" | resize({width: 320, height: 320}) | jpeg %}" alt="massage" width="160" height="160" loading="lazy" decoding="async" aria-hidden="true">
+                                </picture>
+                                <div class="cs-info">
+                                <h3 class="cs-h3">
+                                    <span class="cs-name">Western Fusion Massage</span>
+                                    <span class="cs-price">
+                                        £60
+                                    </span>
+                                </h3>
+                                <p class="cs-item-p">
+                                    Combination of Swedish, therapeutic and sports massage techniques adapted to individual needs.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="cs-item">
+                            <picture class="cs-picture">
+                                <!--Mobile Image -->
+                                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/16.jpg" | resize({width: 152, height: 152}) | avif %}" type="image/avif">
+                                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/16.jpg" | resize({width: 152, height: 152}) | webp %}" type="image/webp">
+                                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/16.jpg" | resize({width: 152, height: 152}) | jpeg %}" type="image/jpeg">
+                                <!--Tablet Image -->
+                                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/16.jpg" | resize({width: 288, height: 288}) | avif %}" type="image/avif">
+                                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/16.jpg" | resize({width: 288, height: 288}) | webp %}" type="image/webp">
+                                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/16.jpg" | resize({width: 288, height: 288}) | jpeg %}" type="image/jpeg">
+                                <!--Desktop Image -->
+                                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/16.jpg" | resize({width: 320, height: 320}) | avif %}" type="image/avif">
+                                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/16.jpg" | resize({width: 320, height: 320}) | webp %}" type="image/webp">
+                                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/16.jpg" | resize({width: 320, height: 320}) | jpeg %}" type="image/jpeg">
+                                <img src="{% getUrl "/assets/images/16.jpg" | resize({width: 320, height: 320}) | jpeg %}" alt="massage" width="160" height="160" loading="lazy" decoding="async" aria-hidden="true">
+                                </picture>
+                               <div class="cs-info">
+                                <h3 class="cs-h3">
+                                    <span class="cs-name">4 Hand Massage</span>
+                                    <span class="cs-price">
+                                        £70
+                                    </span>
+                                </h3>
+                                <p class="cs-item-p">
+                                    Synchronized work of two therapists using Lomi Lomi techniques with aromatherapy oils.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="cs-item">
+                            <picture class="cs-picture">
+                                <!--Mobile Image -->
+                                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/15.jpg" | resize({width: 152, height: 152}) | avif %}" type="image/avif">
+                                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/15.jpg" | resize({width: 152, height: 152}) | webp %}" type="image/webp">
+                                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/15.jpg" | resize({width: 152, height: 152}) | jpeg %}" type="image/jpeg">
+                                <!--Tablet Image -->
+                                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/15.jpg" | resize({width: 288, height: 288}) | avif %}" type="image/avif">
+                                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/15.jpg" | resize({width: 288, height: 288}) | webp %}" type="image/webp">
+                                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/15.jpg" | resize({width: 288, height: 288}) | jpeg %}" type="image/jpeg">
+                                <!--Desktop Image -->
+                                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/15.jpg" | resize({width: 320, height: 320}) | avif %}" type="image/avif">
+                                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/15.jpg" | resize({width: 320, height: 320}) | webp %}" type="image/webp">
+                                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/15.jpg" | resize({width: 320, height: 320}) | jpeg %}" type="image/jpeg">
+                                <img src="{% getUrl "/assets/images/15.jpg" | resize({width: 320, height: 320}) | jpeg %}" alt="massage" width="160" height="160" loading="lazy" decoding="async" aria-hidden="true">
+                                </picture>
+                                <div class="cs-info">
+                                <h3 class="cs-h3">
+                                    <span class="cs-name">Hot Oil Aromatherapy</span>
+                                    <span class="cs-price">
+                                        £60
+                                    </span>
+                                </h3>
+                                <p class="cs-item-p">
+                                    Premium essential oils combined with therapeutic techniques for complete sensory relaxation.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="cs-item">
+                            <picture class="cs-picture">
+                                <!--Mobile Image -->
+                                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/18.jpg" | resize({width: 152, height: 152}) | avif %}" type="image/avif">
+                                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/18.jpg" | resize({width: 152, height: 152}) | webp %}" type="image/webp">
+                                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/18.jpg" | resize({width: 152, height: 152}) | jpeg %}" type="image/jpeg">
+                                <!--Tablet Image -->
+                                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/18.jpg" | resize({width: 288, height: 288}) | avif %}" type="image/avif">
+                                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/18.jpg" | resize({width: 288, height: 288}) | webp %}" type="image/webp">
+                                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/18.jpg" | resize({width: 288, height: 288}) | jpeg %}" type="image/jpeg">
+                                <!--Desktop Image -->
+                                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/18.jpg" | resize({width: 320, height: 320}) | avif %}" type="image/avif">
+                                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/18.jpg" | resize({width: 320, height: 320}) | webp %}" type="image/webp">
+                                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/18.jpg" | resize({width: 320, height: 320}) | jpeg %}" type="image/jpeg">
+                                <img src="{% getUrl "/assets/images/18.jpg" | resize({width: 320, height: 320}) | jpeg %}" alt="massage" width="160" height="160" loading="lazy" decoding="async" aria-hidden="true">
+                                </picture>
+                                <div class="cs-info">
+                                <h3 class="cs-h3">
+                                    <span class="cs-name">Lomi Lomi Massage</span>
+                                    <span class="cs-price">
+                                        £60
+                                    </span>
+                                </h3>
+                                <p class="cs-item-p">
+                                    Traditional Hawaiian flowing techniques emphasizing neck and shoulder through rhythmic movements.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="cs-item">
+                            <picture class="cs-picture">
+                                <!--Mobile Image -->
+                                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/19.jpg" | resize({width: 152, height: 152}) | avif %}" type="image/avif">
+                                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/19.jpg" | resize({width: 152, height: 152}) | webp %}" type="image/webp">
+                                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/19.jpg" | resize({width: 152, height: 152}) | jpeg %}" type="image/jpeg">
+                                <!--Tablet Image -->
+                                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/19.jpg" | resize({width: 288, height: 288}) | avif %}" type="image/avif">
+                                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/19.jpg" | resize({width: 288, height: 288}) | webp %}" type="image/webp">
+                                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/19.jpg" | resize({width: 288, height: 288}) | jpeg %}" type="image/jpeg">
+                                <!--Desktop Image -->
+                                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/19.jpg" | resize({width: 320, height: 320}) | avif %}" type="image/avif">
+                                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/19.jpg" | resize({width: 320, height: 320}) | webp %}" type="image/webp">
+                                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/19.jpg" | resize({width: 320, height: 320}) | jpeg %}" type="image/jpeg">
+                                <img src="{% getUrl "/assets/images/19.jpg" | resize({width: 320, height: 320}) | jpeg %}" alt="massage" width="160" height="160" loading="lazy" decoding="async" aria-hidden="true">
+                                </picture>
+                                <div class="cs-info">
+                                <div class="cs-info">
+                                <h3 class="cs-h3">
+                                    <span class="cs-name">Swedish Massage</span>
+                                    <span class="cs-price">
+                                        £60
+                                    </span>
+                                </h3>
+                                <p class="cs-item-p">
+                                    Classic flowing techniques with therapeutic oils and customized pressure for individual preferences.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="cs-item">
+                            <picture class="cs-picture">
+                                <!--Mobile Image -->
+                                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/20.jpg" | resize({width: 152, height: 152}) | avif %}" type="image/avif">
+                                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/20.jpg" | resize({width: 152, height: 152}) | webp %}" type="image/webp">
+                                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/20.jpg" | resize({width: 152, height: 152}) | jpeg %}" type="image/jpeg">
+                                <!--Tablet Image -->
+                                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/20.jpg" | resize({width: 288, height: 288}) | avif %}" type="image/avif">
+                                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/20.jpg" | resize({width: 288, height: 288}) | webp %}" type="image/webp">
+                                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/20.jpg" | resize({width: 288, height: 288}) | jpeg %}" type="image/jpeg">
+                                <!--Desktop Image -->
+                                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/20.jpg" | resize({width: 320, height: 320}) | avif %}" type="image/avif">
+                                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/20.jpg" | resize({width: 320, height: 320}) | webp %}" type="image/webp">
+                                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/20.jpg" | resize({width: 320, height: 320}) | jpeg %}" type="image/jpeg">
+                                <img src="{% getUrl "/assets/images/20.jpg" | resize({width: 320, height: 320}) | jpeg %}" alt="massage" width="160" height="160" loading="lazy" decoding="async" aria-hidden="true">
+                                </picture>
+                                <div class="cs-info">
+                                <div class="cs-info">
+                                <h3 class="cs-h3">
+                                    <span class="cs-name">Jidapha's Body Spa</span>
+                                    <span class="cs-price">
+                                        £70
+                                    </span>
+                                </h3>
+                                <p class="cs-item-p">
+                                    Full body scrub with Thai Herbal Bolus therapy focusing on back and shoulders.
+                                </p>
+                            </div>
+                         </li>
+                        <li class="cs-item">
+                            <picture class="cs-picture">
+                                <!--Mobile Image -->
+                                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/21.jpg" | resize({width: 152, height: 152}) | avif %}" type="image/avif">
+                                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/21.jpg" | resize({width: 152, height: 152}) | webp %}" type="image/webp">
+                                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/21.jpg" | resize({width: 152, height: 152}) | jpeg %}" type="image/jpeg">
+                                <!--Tablet Image -->
+                                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/21.jpg" | resize({width: 288, height: 288}) | avif %}" type="image/avif">
+                                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/21.jpg" | resize({width: 288, height: 288}) | webp %}" type="image/webp">
+                                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/21.jpg" | resize({width: 288, height: 288}) | jpeg %}" type="image/jpeg">
+                                <!--Desktop Image -->
+                                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/21.jpg" | resize({width: 320, height: 320}) | avif %}" type="image/avif">
+                                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/21.jpg" | resize({width: 320, height: 320}) | webp %}" type="image/webp">
+                                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/21.jpg" | resize({width: 320, height: 320}) | jpeg %}" type="image/jpeg">
+                                <img src="{% getUrl "/assets/images/21.jpg" | resize({width: 320, height: 320}) | jpeg %}" alt="massage" width="160" height="160" loading="lazy" decoding="async" aria-hidden="true">
+                                </picture>
+                                <div class="cs-info">
+                                <div class="cs-info">
+                                <h3 class="cs-h3">
+                                    <span class="cs-name">Herbal Body Treatments</span>
+                                    <span class="cs-price">
+                                        £70
+                                    </span>
+                                </h3>
+                                <p class="cs-item-p">
+                                    Comprehensive scrub therapy, herbal bolus application and focused massage work.
+                                </p>
+                            </div>
+                         </li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+        <!--90 min-->
+        <div id="cs-menu2-1037" class="cs-menu-group" data-category="two">
+            <!--90 min Section 1-->
+            <section class="cs-menu">
+                <div class="cs-container">
+                    <ul class="cs-card-group">
+                        <li class="cs-item">
+                            <picture class="cs-picture">
+                                <!--Mobile Image -->
+                                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/17.jpg" | resize({width: 152, height: 152}) | avif %}" type="image/avif">
+                                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/17.jpg" | resize({width: 152, height: 152}) | webp %}" type="image/webp">
+                                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/17.jpg" | resize({width: 152, height: 152}) | jpeg %}" type="image/jpeg">
+                                <!--Tablet Image -->
+                                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/17.jpg" | resize({width: 288, height: 288}) | avif %}" type="image/avif">
+                                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/17.jpg" | resize({width: 288, height: 288}) | webp %}" type="image/webp">
+                                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/14.jpg" | resize({width: 288, height: 288}) | jpeg %}" type="image/jpeg">
+                                <!--Desktop Image -->
+                                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/17.jpg" | resize({width: 320, height: 320}) | avif %}" type="image/avif">
+                                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/17.jpg" | resize({width: 320, height: 320}) | webp %}" type="image/webp">
+                                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/17.jpg" | resize({width: 320, height: 320}) | jpeg %}" type="image/jpeg">
+                                <img src="{% getUrl "/assets/images/17.jpg" | resize({width: 320, height: 320}) | jpeg %}" alt="massage" width="160" height="160" loading="lazy" decoding="async" aria-hidden="true">
+                                </picture>
+                                <div class="cs-info">
+                                <h3 class="cs-h3">
+                                    <span class="cs-name">Wellness Hot Stone</span>
+                                    <span class="cs-price">
+                                        £70
+                                    </span>
+                                </h3>
+                                <p class="cs-item-p">
+                                    Therapeutic orange salt and jade stones for elderly, pregnant women and those seeking stress relief.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="cs-item">
+                            <picture class="cs-picture">
+                                <!--Mobile Image -->
+                                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/14.jpg" | resize({width: 152, height: 152}) | avif %}" type="image/avif">
+                                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/14.jpg" | resize({width: 152, height: 152}) | webp %}" type="image/webp">
+                                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/14.jpg" | resize({width: 152, height: 152}) | jpeg %}" type="image/jpeg">
+                                <!--Tablet Image -->
+                                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/14.jpg" | resize({width: 288, height: 288}) | avif %}" type="image/avif">
+                                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/14.jpg" | resize({width: 288, height: 288}) | webp %}" type="image/webp">
+                                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/14.jpg" | resize({width: 288, height: 288}) | jpeg %}" type="image/jpeg">
+                                <!--Desktop Image -->
+                                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/14.jpg" | resize({width: 320, height: 320}) | avif %}" type="image/avif">
+                                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/14.jpg" | resize({width: 320, height: 320}) | webp %}" type="image/webp">
+                                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/14.jpg" | resize({width: 320, height: 320}) | jpeg %}" type="image/jpeg">
+                                <img src="{% getUrl "/assets/images/14.jpg" | resize({width: 320, height: 320}) | jpeg %}" alt="massage" width="160" height="160" loading="lazy" decoding="async" aria-hidden="true">
+                                </picture>
+                                <div class="cs-info">
+                                <h3 class="cs-h3">
+                                    <span class="cs-name">Western Fusion Massage</span>
+                                    <span class="cs-price">
+                                        £60
+                                    </span>
+                                </h3>
+                                <p class="cs-item-p">
+                                    Combination of Swedish, therapeutic and sports massage techniques adapted to individual needs.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="cs-item">
+                            <picture class="cs-picture">
+                                <!--Mobile Image -->
+                                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/16.jpg" | resize({width: 152, height: 152}) | avif %}" type="image/avif">
+                                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/16.jpg" | resize({width: 152, height: 152}) | webp %}" type="image/webp">
+                                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/16.jpg" | resize({width: 152, height: 152}) | jpeg %}" type="image/jpeg">
+                                <!--Tablet Image -->
+                                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/16.jpg" | resize({width: 288, height: 288}) | avif %}" type="image/avif">
+                                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/16.jpg" | resize({width: 288, height: 288}) | webp %}" type="image/webp">
+                                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/16.jpg" | resize({width: 288, height: 288}) | jpeg %}" type="image/jpeg">
+                                <!--Desktop Image -->
+                                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/16.jpg" | resize({width: 320, height: 320}) | avif %}" type="image/avif">
+                                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/16.jpg" | resize({width: 320, height: 320}) | webp %}" type="image/webp">
+                                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/16.jpg" | resize({width: 320, height: 320}) | jpeg %}" type="image/jpeg">
+                                <img src="{% getUrl "/assets/images/16.jpg" | resize({width: 320, height: 320}) | jpeg %}" alt="massage" width="160" height="160" loading="lazy" decoding="async" aria-hidden="true">
+                                </picture>
+                               <div class="cs-info">
+                                <h3 class="cs-h3">
+                                    <span class="cs-name">4 Hand Massage</span>
+                                    <span class="cs-price">
+                                        £70
+                                    </span>
+                                </h3>
+                                <p class="cs-item-p">
+                                    Synchronized work of two therapists using Lomi Lomi techniques with aromatherapy oils.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="cs-item">
+                            <picture class="cs-picture">
+                                <!--Mobile Image -->
+                                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/15.jpg" | resize({width: 152, height: 152}) | avif %}" type="image/avif">
+                                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/15.jpg" | resize({width: 152, height: 152}) | webp %}" type="image/webp">
+                                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/15.jpg" | resize({width: 152, height: 152}) | jpeg %}" type="image/jpeg">
+                                <!--Tablet Image -->
+                                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/15.jpg" | resize({width: 288, height: 288}) | avif %}" type="image/avif">
+                                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/15.jpg" | resize({width: 288, height: 288}) | webp %}" type="image/webp">
+                                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/15.jpg" | resize({width: 288, height: 288}) | jpeg %}" type="image/jpeg">
+                                <!--Desktop Image -->
+                                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/15.jpg" | resize({width: 320, height: 320}) | avif %}" type="image/avif">
+                                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/15.jpg" | resize({width: 320, height: 320}) | webp %}" type="image/webp">
+                                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/15.jpg" | resize({width: 320, height: 320}) | jpeg %}" type="image/jpeg">
+                                <img src="{% getUrl "/assets/images/15.jpg" | resize({width: 320, height: 320}) | jpeg %}" alt="massage" width="160" height="160" loading="lazy" decoding="async" aria-hidden="true">
+                                </picture>
+                                <div class="cs-info">
+                                <h3 class="cs-h3">
+                                    <span class="cs-name">Hot Oil Aromatherapy</span>
+                                    <span class="cs-price">
+                                        £60
+                                    </span>
+                                </h3>
+                                <p class="cs-item-p">
+                                    Premium essential oils combined with therapeutic techniques for complete sensory relaxation.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="cs-item">
+                            <picture class="cs-picture">
+                                <!--Mobile Image -->
+                                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/18.jpg" | resize({width: 152, height: 152}) | avif %}" type="image/avif">
+                                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/18.jpg" | resize({width: 152, height: 152}) | webp %}" type="image/webp">
+                                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/18.jpg" | resize({width: 152, height: 152}) | jpeg %}" type="image/jpeg">
+                                <!--Tablet Image -->
+                                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/18.jpg" | resize({width: 288, height: 288}) | avif %}" type="image/avif">
+                                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/18.jpg" | resize({width: 288, height: 288}) | webp %}" type="image/webp">
+                                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/18.jpg" | resize({width: 288, height: 288}) | jpeg %}" type="image/jpeg">
+                                <!--Desktop Image -->
+                                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/18.jpg" | resize({width: 320, height: 320}) | avif %}" type="image/avif">
+                                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/18.jpg" | resize({width: 320, height: 320}) | webp %}" type="image/webp">
+                                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/18.jpg" | resize({width: 320, height: 320}) | jpeg %}" type="image/jpeg">
+                                <img src="{% getUrl "/assets/images/18.jpg" | resize({width: 320, height: 320}) | jpeg %}" alt="massage" width="160" height="160" loading="lazy" decoding="async" aria-hidden="true">
+                                </picture>
+                                <div class="cs-info">
+                                <h3 class="cs-h3">
+                                    <span class="cs-name">Lomi Lomi Massage</span>
+                                    <span class="cs-price">
+                                        £60
+                                    </span>
+                                </h3>
+                                <p class="cs-item-p">
+                                    Traditional Hawaiian flowing techniques emphasizing neck and shoulder through rhythmic movements.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="cs-item">
+                            <picture class="cs-picture">
+                                <!--Mobile Image -->
+                                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/19.jpg" | resize({width: 152, height: 152}) | avif %}" type="image/avif">
+                                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/19.jpg" | resize({width: 152, height: 152}) | webp %}" type="image/webp">
+                                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/19.jpg" | resize({width: 152, height: 152}) | jpeg %}" type="image/jpeg">
+                                <!--Tablet Image -->
+                                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/19.jpg" | resize({width: 288, height: 288}) | avif %}" type="image/avif">
+                                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/19.jpg" | resize({width: 288, height: 288}) | webp %}" type="image/webp">
+                                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/19.jpg" | resize({width: 288, height: 288}) | jpeg %}" type="image/jpeg">
+                                <!--Desktop Image -->
+                                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/19.jpg" | resize({width: 320, height: 320}) | avif %}" type="image/avif">
+                                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/19.jpg" | resize({width: 320, height: 320}) | webp %}" type="image/webp">
+                                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/19.jpg" | resize({width: 320, height: 320}) | jpeg %}" type="image/jpeg">
+                                <img src="{% getUrl "/assets/images/19.jpg" | resize({width: 320, height: 320}) | jpeg %}" alt="massage" width="160" height="160" loading="lazy" decoding="async" aria-hidden="true">
+                                </picture>
+                                <div class="cs-info">
+                                <div class="cs-info">
+                                <h3 class="cs-h3">
+                                    <span class="cs-name">Swedish Massage</span>
+                                    <span class="cs-price">
+                                        £60
+                                    </span>
+                                </h3>
+                                <p class="cs-item-p">
+                                    Classic flowing techniques with therapeutic oils and customized pressure for individual preferences.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="cs-item">
+                            <picture class="cs-picture">
+                                <!--Mobile Image -->
+                                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/20.jpg" | resize({width: 152, height: 152}) | avif %}" type="image/avif">
+                                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/20.jpg" | resize({width: 152, height: 152}) | webp %}" type="image/webp">
+                                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/20.jpg" | resize({width: 152, height: 152}) | jpeg %}" type="image/jpeg">
+                                <!--Tablet Image -->
+                                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/20.jpg" | resize({width: 288, height: 288}) | avif %}" type="image/avif">
+                                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/20.jpg" | resize({width: 288, height: 288}) | webp %}" type="image/webp">
+                                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/20.jpg" | resize({width: 288, height: 288}) | jpeg %}" type="image/jpeg">
+                                <!--Desktop Image -->
+                                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/20.jpg" | resize({width: 320, height: 320}) | avif %}" type="image/avif">
+                                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/20.jpg" | resize({width: 320, height: 320}) | webp %}" type="image/webp">
+                                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/20.jpg" | resize({width: 320, height: 320}) | jpeg %}" type="image/jpeg">
+                                <img src="{% getUrl "/assets/images/20.jpg" | resize({width: 320, height: 320}) | jpeg %}" alt="massage" width="160" height="160" loading="lazy" decoding="async" aria-hidden="true">
+                                </picture>
+                                <div class="cs-info">
+                                <div class="cs-info">
+                                <h3 class="cs-h3">
+                                    <span class="cs-name">Jidapha's Body Spa</span>
+                                    <span class="cs-price">
+                                        £70
+                                    </span>
+                                </h3>
+                                <p class="cs-item-p">
+                                    Full body scrub with Thai Herbal Bolus therapy focusing on back and shoulders.
+                                </p>
+                            </div>
+                         </li>
+                        <li class="cs-item">
+                            <picture class="cs-picture">
+                                <!--Mobile Image -->
+                                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/21.jpg" | resize({width: 152, height: 152}) | avif %}" type="image/avif">
+                                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/21.jpg" | resize({width: 152, height: 152}) | webp %}" type="image/webp">
+                                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/21.jpg" | resize({width: 152, height: 152}) | jpeg %}" type="image/jpeg">
+                                <!--Tablet Image -->
+                                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/21.jpg" | resize({width: 288, height: 288}) | avif %}" type="image/avif">
+                                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/21.jpg" | resize({width: 288, height: 288}) | webp %}" type="image/webp">
+                                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/21.jpg" | resize({width: 288, height: 288}) | jpeg %}" type="image/jpeg">
+                                <!--Desktop Image -->
+                                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/21.jpg" | resize({width: 320, height: 320}) | avif %}" type="image/avif">
+                                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/21.jpg" | resize({width: 320, height: 320}) | webp %}" type="image/webp">
+                                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/21.jpg" | resize({width: 320, height: 320}) | jpeg %}" type="image/jpeg">
+                                <img src="{% getUrl "/assets/images/21.jpg" | resize({width: 320, height: 320}) | jpeg %}" alt="massage" width="160" height="160" loading="lazy" decoding="async" aria-hidden="true">
+                                </picture>
+                                <div class="cs-info">
+                                <div class="cs-info">
+                                <h3 class="cs-h3">
+                                    <span class="cs-name">Herbal Body Treatments</span>
+                                    <span class="cs-price">
+                                        £70
+                                    </span>
+                                </h3>
+                                <p class="cs-item-p">
+                                    Comprehensive scrub therapy, herbal bolus application and focused massage work.
+                                </p>
+                            </div>
+                         </li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+        <a href="{{client.onlineBooking}}" target="_blank" rel="noopener"class="cs-button-solid">Book A Massage</a>
+    </div>
+</div>
+
+<script>class CS_MenuFilter {
+    filtersSelector = '.cs-button'
+    menuSelector = '.cs-menu-group'
+    activeClass = 'cs-active'
+    hiddenClass = 'cs-hidden'
+
+    constructor() {
+        this.$menus = document.querySelectorAll(this.menuSelector)
+        const $filters = document.querySelectorAll(this.filtersSelector)
+
+        this.onClick($filters[0])
+
+        for (const $filter of $filters) {
+            $filter.addEventListener('click', () => this.onClick($filter))
+        }
+    }
+
+    onClick($filter) {
+        this.filter($filter.dataset.filter)
+
+        const { activeClass } = this
+
+        this.$activeFilter?.classList.remove(activeClass)
+        $filter.classList.add(activeClass)
+
+        this.$activeFilter = $filter
+    }
+
+    filter(filter) {
+        const showAll = filter == 'all'
+        const { hiddenClass } = this
+
+        for (const $menu of this.$menus) {
+            const show = showAll || $menu.dataset.category == filter
+            $menu.classList.toggle(hiddenClass, !show)
+        }
+    }
+}
+
+new CS_MenuFilter()
+</script>                                   
+
+{% endblock %}
+
+

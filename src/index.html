@@ -79,105 +79,251 @@ eleventyNavigation:
 <!--                    Hero                      -->
 <!-- ============================================ -->
 
-{% include 'components/hero-856.html' %}
+<section id="hero-1950">
+    <div class="cs-container">
+        <div class="cs-content">
+            <h1 class="cs-title">We do not cook, we create your emotions!</h1>
+            <div class="cs-flex-group">
+                <p class="cs-text">My passion for food has brought many new, fun and delicious dishes to the table.</p>
+                <a href="" class="cs-button-solid">Read More</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Background Image, there's a background image in the CSS for the parallax effect you'll need to change as well if you swap out our images -->
+    <picture class="cs-background">
+        <source media="(max-width: 600px)" srcset="/assets/images/hero.jpg">
+        <source media="(min-width: 601px)" srcset="/assets/images/hero.jpg">
+        <img decoding="async" src="/assets/images/hero.jpg" alt="restaurant" width="2250" height="1500" aria-hidden="true">
+    </picture>
+</section>
+                                
 
 <!-- ============================================ -->
 <!--               Why Choose Us                  -->
 <!-- ============================================ -->
 
-{% include 'components/why-choose-687.html' %}
-
-{% include 'components/why-choose-1313.html' %}
-
-{% include 'components/why-choose-1631.html' %}
-
-{% include 'components/why-choose-1635.html' %}
-
 {% include 'components/why-choose-1658.html' %}
 
-
 <!-- ============================================ -->
-<!--            Featured Service 1                -->
+<!--                About us                  -->
 <!-- ============================================ -->
 
-<section id="sbs-867">
+<section id="sbs-1006">
     <div class="cs-container">
-        <picture class="cs-picture">
-            <!--Mobile Image -->
-            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/featured-1.jpg" | resize({width: 576, height: 800}) | avif %}" type="image/avif">
-            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/featured-1.jpg" | resize({width: 576, height: 800}) | webp %}" type="image/webp">
-            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/featured-1.jpg" | resize({width: 576, height: 800}) | jpeg %}" type="image/jpeg">
-            <!--Tablet Image -->
-            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/featured-1.jpg" | resize({width: 1100, height: 1433}) | avif %}" type="image/avif">
-            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/featured-1.jpg" | resize({width: 1100, height: 1433}) | webp %}" type="image/webp">
-            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/featured-1.jpg" | resize({width: 1100, height: 1433}) | jpeg %}" type="image/jpeg">
-            <!--Desktop Image -->
-            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/featured-1.jpg" | resize({width: 1260, height: 1550}) | avif %}" type="image/avif">
-            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/featured-1.jpg" | resize({width: 1260, height: 1550}) | webp %}" type="image/webp">
-            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/featured-1.jpg" | resize({width: 1260, height: 1550}) | jpeg %}" type="image/jpeg">
-            <img src="{% getUrl "/assets/images/featured-1.jpg" | resize({width: 1260, height: 1550}) | jpeg %}" alt="massage" width="630" height="775" loading="lazy" decoding="async" aria-hidden="true">
-        </picture>
+        <div class="cs-image-group">
+            <picture class="cs-picture">
+                <!--Mobile Image -->
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/featured-1.jpg" | resize({width: 528, height: 474}) | avif %}" type="image/avif">
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/featured-1.jpg" | resize({width: 528, height: 474}) | webp %}" type="image/webp">
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/featured-1.jpg" | resize({width: 528, height: 474}) | jpeg %}" type="image/jpeg">
+                <!--Tablet Image -->
+                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/featured-1.jpg" | resize({width: 1552, height: 474}) | avif %}" type="image/avif">
+                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/featured-1.jpg" | resize({width: 1552, height: 474}) | webp %}" type="image/webp">
+                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/featured-1.jpg" | resize({width: 1552, height: 474}) | jpeg %}" type="image/jpeg">
+                <!--Desktop Image -->
+                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/featured-1.jpg" | resize({width: 1028, height: 872}) | avif %}" type="image/avif">
+                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/featured-1.jpg" | resize({width: 1028, height: 872}) | webp %}" type="image/webp">
+                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/featured-1.jpg" | resize({width: 1028, height: 872}) | jpeg %}" type="image/jpeg">
+                <img src="{% getUrl "/assets/images/featured-1.jpg" | resize({width: 1028, height: 872}) | jpeg %}" alt="about us image" width="522" height="461" loading="lazy" decoding="async" aria-hidden="true">
+            </picture>
+            <img class="cs-seal" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/SideBySide/seal2.svg" alt="seal" width="190" height="182">
+        </div>
         <div class="cs-content">
-            <span class="cs-topper">Featured Service</span>
-            <h2 class="cs-title">Occupational and Speech Therapy</h2>
+            <span class="cs-topper">Our Story</span>
+            <h2 class="cs-title">Who We Are</h2>
             <p class="cs-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque dicta officiis praesentium necessitatibus tempora unde quasi porro nemo aliquam voluptatem quaerat hic, doloremque impedit perferendis labore, ea libero voluptas laudantium? 
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
+                <!--Creates the space between p tags on mobile-->
+                <span class="cs-spacer"></span>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
             </p>
-            <p class="cs-text">
-                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-            </p>
-            <a href="" class="cs-button-solid">Learn More</a>
+            <a href="" class="cs-button-solid">Reserve Your Table</a>
         </div>
     </div>
 </section>
 
 <!-- ============================================ -->
-<!--             Popular Services                 -->
+<!--                    Services                  -->
 <!-- ============================================ -->
 
-{% include 'components/services-343.html' %}
-
-{% include 'components/services-877.html' %}
-
-{% include 'components/services-879.html' %}
-
-{% include 'components/services-1251.html' %}
-
-{% include 'components/services-2129.html' %}
-
-
-
-<!-- ============================================ -->
-<!--             Featured Service 2               -->
-<!-- ============================================ -->
-
-<section id="sbs-r-870">
+<section id="services-1252">
     <div class="cs-container">
-        <picture class="cs-picture">
-            <!--Mobile Image -->
-            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/featured-2.jpg" | resize({width: 576, height: 800}) | avif %}" type="image/avif">
-            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/featured-2.jpg" | resize({width: 576, height: 800}) | webp %}" type="image/webp">
-            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/featured-2.jpg" | resize({width: 576, height: 800}) | jpeg %}" type="image/jpeg">
-            <!--Tablet Image -->
-            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/featured-2.jpg" | resize({width: 1100, height: 1433}) | avif %}" type="image/avif">
-            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/featured-2.jpg" | resize({width: 1100, height: 1433}) | webp %}" type="image/webp">
-            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/featured-2.jpg" | resize({width: 1100, height: 1433}) | jpeg %}" type="image/jpeg">
-            <!--Desktop Image -->
-            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/featured-2.jpg" | resize({width: 1260, height: 1550}) | avif %}" type="image/avif">
-            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/featured-2.jpg" | resize({width: 1260, height: 1550}) | webp %}" type="image/webp">
-            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/featured-2.jpg" | resize({width: 1260, height: 1550}) | jpeg %}" type="image/jpeg">
-            <img src="{% getUrl "/assets/images/featured-2.jpg" | resize({width: 1260, height: 1550}) | jpeg %}" alt="massage" width="630" height="775" loading="lazy" decoding="async" aria-hidden="true">
-        </picture>
         <div class="cs-content">
-            <span class="cs-topper">Featured Service</span>
-            <h2 class="cs-title">Occupational and Speech Therapy</h2>
+            <div class="cs-flex-group">
+                <span class="cs-topper">Our Services</span>
+                <h2 class="cs-title">Professional Construction Services</h2>
+            </div>
             <p class="cs-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque dicta officiis praesentium necessitatibus tempora unde quasi porro nemo aliquam voluptatem quaerat hic, doloremque impedit perferendis labore, ea libero voluptas laudantium? 
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.
+            </p>
+        </div>
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <a href="" class="cs-link">
+                    <h3 class="cs-h3">Speciality Techniques</h3>
+                    <p class="cs-item-text">
+                        We’ve helped thousands of organizations transform to become relevant of helped thousands.
+                    </p>
+                </a>
+                <picture class="cs-item-background">
+                    <!--Mobile Image -->
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/speciality.jpg" | resize({width: 576, height: 496}) | avif %}" type="image/avif">
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/speciality.jpg" | resize({width: 576, height: 496}) | webp %}" type="image/webp">
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/speciality.jpg" | resize({width: 576, height: 496}) | jpeg %}" type="image/jpeg">
+                    <!--Tablet Image -->
+                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/speciality.jpg" | resize({width: 970, height: 612}) | avif %}" type="image/avif">
+                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/speciality.jpg" | resize({width: 970, height: 612}) | webp %}" type="image/webp">
+                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/speciality.jpg" | resize({width: 970, height: 612}) | jpeg %}" type="image/jpeg">
+                    <!--Desktop Image -->
+                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/speciality.jpg" | resize({width: 610, height: 796}) | avif %}" type="image/avif">
+                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/speciality.jpg" | resize({width: 610, height: 796}) | webp %}" type="image/webp">
+                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/speciality.jpg" | resize({width: 610, height: 796}) | jpeg %}" type="image/jpeg">
+                    <img src="{% getUrl "/assets/images/speciality.jpg" | resize({width: 610, height: 796}) | jpeg %}" alt="speciality techniques" width="413" height="374" loading="lazy" decoding="async" aria-hidden="true">
+                </picture>
+            </li>
+            <li class="cs-item">
+                <a href="" class="cs-link">
+                    <h3 class="cs-h3">Theraputic Treatments</h3>
+                    <p class="cs-item-text">
+                        We’ve helped thousands of organizations transform to become relevant of helped thousands.
+                    </p>
+                </a>
+               <picture class="cs-item-background">
+                    <!--Mobile Image -->
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/13.jpg" | resize({width: 576, height: 496}) | avif %}" type="image/avif">
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/13.jpg" | resize({width: 576, height: 496}) | webp %}" type="image/webp">
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/13.jpg" | resize({width: 576, height: 496}) | jpeg %}" type="image/jpeg">
+                    <!--Tablet Image -->
+                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/13.jpg" | resize({width: 970, height: 612}) | avif %}" type="image/avif">
+                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/13.jpg" | resize({width: 970, height: 612}) | webp %}" type="image/webp">
+                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/13.jpg" | resize({width: 970, height: 612}) | jpeg %}" type="image/jpeg">
+                    <!--Desktop Image -->
+                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/13.jpg" | resize({width: 610, height: 796}) | avif %}" type="image/avif">
+                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/13.jpg" | resize({width: 610, height: 796}) | webp %}" type="image/webp">
+                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/13.jpg" | resize({width: 610, height: 796}) | jpeg %}" type="image/jpeg">
+                    <img src="{% getUrl "/assets/images/13.jpg" | resize({width: 610, height: 796}) | jpeg %}" alt="theraputic treatments" width="413" height="374" loading="lazy" decoding="async" aria-hidden="true">
+                </picture>
+            </li>
+            <li class="cs-item">
+                <a href="" class="cs-link">
+                    <h3 class="cs-h3">Relaxation & Wellness</h3>
+                    <p class="cs-item-text">
+                        We’ve helped thousands of organizations transform to become relevant of helped thousands.
+                    </p>
+                </a>
+                 <picture class="cs-item-background">
+                    <!--Mobile Image -->
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/15.jpg" | resize({width: 576, height: 496}) | avif %}" type="image/avif">
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/15.jpg" | resize({width: 576, height: 496}) | webp %}" type="image/webp">
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/15.jpg" | resize({width: 576, height: 496}) | jpeg %}" type="image/jpeg">
+                    <!--Tablet Image -->
+                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/15.jpg" | resize({width: 970, height: 612}) | avif %}" type="image/avif">
+                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/15.jpg" | resize({width: 970, height: 612}) | webp %}" type="image/webp">
+                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/15.jpg" | resize({width: 970, height: 612}) | jpeg %}" type="image/jpeg">
+                    <!--Desktop Image -->
+                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/15.jpg" | resize({width: 610, height: 796}) | avif %}" type="image/avif">
+                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/15.jpg" | resize({width: 610, height: 796}) | webp %}" type="image/webp">
+                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/15.jpg" | resize({width: 610, height: 796}) | jpeg %}" type="image/jpeg">
+                    <img src="{% getUrl "/assets/images/15.jpg" | resize({width: 610, height: 796}) | jpeg %}" alt="Relaxation & Wellness" width="413" height="374" loading="lazy" decoding="async" aria-hidden="true">
+                </picture>
+            </li>
+            <li class="cs-item">
+                <a href="" class="cs-link">
+                    <h3 class="cs-h3">Traditional Eastern Therapies</h3>
+                    <p class="cs-item-text">
+                        We’ve helped thousands of organizations transform to become relevant of helped thousands.
+                    </p>
+                </a>
+                 <picture class="cs-item-background">
+                    <!--Mobile Image -->
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/featured-1.jpg" | resize({width: 576, height: 496}) | avif %}" type="image/avif">
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/featured-1.jpg" | resize({width: 576, height: 496}) | webp %}" type="image/webp">
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/featured-1.jpg" | resize({width: 576, height: 496}) | jpeg %}" type="image/jpeg">
+                    <!--Tablet Image -->
+                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/featured-1.jpg" | resize({width: 970, height: 612}) | avif %}" type="image/avif">
+                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/featured-1.jpg" | resize({width: 970, height: 612}) | webp %}" type="image/webp">
+                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/featured-1.jpg" | resize({width: 970, height: 612}) | jpeg %}" type="image/jpeg">
+                    <!--Desktop Image -->
+                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/featured-1.jpg" | resize({width: 610, height: 796}) | avif %}" type="image/avif">
+                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/featured-1.jpg" | resize({width: 610, height: 796}) | webp %}" type="image/webp">
+                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/featured-1.jpg" | resize({width: 610, height: 796}) | jpeg %}" type="image/jpeg">
+                    <img src="{% getUrl "/assets/images/featured-1.jpg" | resize({width: 610, height: 796}) | jpeg %}" alt="Traditional Eastern Therapies" width="413" height="374" loading="lazy" decoding="async" aria-hidden="true">
+                </picture>
+            </li>
+        </ul>
+    </div>
+</section>
+                                
+
+<!-- ============================================ -->
+<!--              Training Courses                -->
+<!-- ============================================ -->
+
+<section id="sbsr-946">
+    <div class="cs-container">
+        <div class="cs-image-group">
+            <!--Long Left Image-->
+            <picture class=" cs-picture cs-picture1">
+                <!--Mobile Image -->
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/wax.jpg" | resize({width: 314, height: 530}) | avif %}" type="image/avif">
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/wax.jpg" | resize({width: 314, height: 530}) | webp %}" type="image/webp">
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/wax.jpg" | resize({width: 314, height: 530}) | jpeg %}" type="image/jpeg">
+                <!--Tablet Image -->
+                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/wax.jpg" | resize({width: 590, height: 996}) | avif %}" type="image/avif">
+                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/wax.jpg" | resize({width: 590, height: 996}) | webp %}" type="image/webp">
+                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/wax.jpg" | resize({width: 590, height: 996}) | jpeg %}" type="image/jpeg">
+                <!--Desktop Image -->
+                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/wax.jpg" | resize({width: 700, height: 1180}) | avif %}" type="image/avif">
+                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/wax.jpg" | resize({width: 700, height: 1180}) | webp %}" type="image/webp">
+                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/wax.jpg" | resize({width: 700, height: 1180}) | jpeg %}" type="image/jpeg">
+                <img src="{% getUrl "/assets/images/wax.jpg" | resize({width: 700, height: 1180}) | jpeg %}" alt="image description" width="349" height="590" loading="lazy" decoding="async">
+            </picture>
+            <!--Top right image-->
+            <picture class="cs-picture cs-picture2">
+                <!--Mobile Image -->
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/lips.jpg" | resize({width: 252, height: 348}) | avif %}" type="image/avif">
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/lips.jpg" | resize({width: 252, height: 348}) | webp %}" type="image/webp">
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/lips.jpg" | resize({width: 252, height: 348}) | jpeg %}" type="image/jpeg">
+                <!--Tablet Image -->
+                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/lips.jpg" | resize({width: 476, height: 654}) | avif %}" type="image/avif">
+                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/lips.jpg" | resize({width: 476, height: 654}) | webp %}" type="image/webp">
+                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/lips.jpg" | resize({width: 476, height: 654}) | jpeg %}" type="image/jpeg">
+                <!--Desktop Image -->
+                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/lips.jpg" | resize({width: 562, height: 774}) | avif %}" type="image/avif">
+                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/lips.jpg" | resize({width: 562, height: 774}) | webp %}" type="image/webp">
+                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/lips.jpg" | resize({width: 562, height: 774}) | jpeg %}" type="image/jpeg">
+                <img src="{% getUrl "/assets/images/lips.jpg" | resize({width: 562, height: 774}) | jpeg %}" alt="image description" width="281" height="387" loading="lazy" decoding="async" >
+            </picture>
+            <!--Bottom right image-->
+            <picture class="cs-picture cs-picture3">
+                <!--Mobile Image -->
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/eyebrow.jpg" | resize({width: 252, height: 252}) | avif %}" type="image/avif">
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/eyebrow.jpg" | resize({width: 252, height: 252}) | webp %}" type="image/webp">
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/eyebrow.jpg" | resize({width: 252, height: 252}) | jpeg %}" type="image/jpeg">
+                <!--Tablet Image -->
+                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/eyebrow.jpg" | resize({width: 476, height: 474}) | avif %}" type="image/avif">
+                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/eyebrow.jpg" | resize({width: 476, height: 474}) | webp %}" type="image/webp">
+                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/eyebrow.jpg" | resize({width: 476, height: 474}) | jpeg %}" type="image/jpeg">
+                <!--Desktop Image -->
+                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/eyebrow.jpg" | resize({width: 562, height: 560}) | avif %}" type="image/avif">
+                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/eyebrow.jpg" | resize({width: 562, height: 560}) | webp %}" type="image/webp">
+                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/eyebrow.jpg" | resize({width: 562, height: 560}) | jpeg %}" type="image/jpeg">
+                <img src="{% getUrl "/assets/images/eyebrow.jpg" | resize({width: 562, height: 560}) | jpeg %}" alt="image description" width="281" height="280" loading="lazy" decoding="async" >
+            </picture>
+            <!--Seal-->
+            <img class="cs-seal" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/seal.svg" alt="seal" width="150" height="150">
+        </div>
+        <div class="cs-content">
+            <span class="cs-topper">Hair Salon Services</span>
+            <h2 class="cs-title">Life Is More Beautiful When You Meet The Right Hairdresser</h2>
+            <p class="cs-text">
+                The Hair salon Stitch pack is designed specifically for a hairdressers, salons, and beauty centers, with a modern high end feel to match the expectations for design in this industry. These Stitches are great for anything and everything hair and beauty but can also be repurposed for anything high end or luxury.
             </p>
             <p class="cs-text">
-                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                The Hair salon Stitch pack is designed specifically for a hairdressers, salons, and beauty centers, with a modern high end feel to match the expectations for design in this industry. These Stitches are great for anything and everything hair and beauty but can also be repurposed for anything high end or luxury.
             </p>
-            <a href="{{client.onlineBooking}}" class="cs-button-solid">Learn More</a>
+            <a href="" class="cs-button-solid" aria-label="learn more about us">Learn More</a>
         </div>
     </div>
 </section>
@@ -268,12 +414,39 @@ eleventyNavigation:
 <!-- ============================================ -->
 <!--                   Reviews                    -->
 <!-- ============================================ -->
-                                
-{% include 'components/reviews-1673.html' %}                             
-                                
-                                
-                                
-                                
+
+<section id="reviews-727">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Testimonials</span>
+            <h2 class="cs-title">Trusted by Thousand of People & Companies</h2>
+            <p class="cs-text">
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.
+            </p>
+        </div>
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <img class="cs-icon" src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/quote-blue.svg" alt="quote icon" aria-hidden="true" width="40" height="38" loading="lazy" decoding="async">
+                <h3 class="cs-h3">Loving the color!</h3>
+                <p class="cs-item-text">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores iste vitae, aliquam temporibus modi libero dolorem rerum? Dolore soluta eligendi mollitia. Doloribus et exercitationem cupiditate?
+                </p>
+                <span class="cs-name">Daniel</span>
+            </li>
+            <li class="cs-item">
+                <img class="cs-icon" src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/quote-blue.svg" alt="quote icon" aria-hidden="true" width="40" height="38" loading="lazy" decoding="async">
+                <h3 class="cs-h3">Affordable</h3>
+                <p class="cs-item-text">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores iste vitae, aliquam temporibus modi libero dolorem rerum? Dolore soluta eligendi mollitia. Doloribus et exercitationem cupiditate?
+                </p>
+                <span class="cs-name">Daniel</span>
+            </li>
+        </ul>
+        <a href="" class="cs-button-solid" aria-label="learn more about us">Leave A Review</a>
+    </div>
+</section>
+                                              
+       
 <script>const faqItems = Array.from(document.querySelectorAll('.cs-faq-item'));
     for (const item of faqItems) {
         const onClick = () => {

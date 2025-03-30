@@ -1,0 +1,489 @@
+---
+title: 'Beauty | Code Stitch Web Designs'
+description: 'Meta description for the page'
+permalink: 'beauty/'
+eleventyNavigation:
+    key: Beauty
+    order: 400
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/beauty.css">
+    <link rel="preload" as="image" href="{% getUrl "/assets/images/banner.jpg" | resize({width: 2560, height: 1136}) | avif %}">
+{% endblock %}
+
+{% block body %}
+
+<!-- ============================================ -->
+<!--                    LANDING                   -->
+<!-- ============================================ -->
+
+<section id="int-hero">
+    <h1 id="home-h">Beauty</h1>
+    <picture>
+        <source media="(max-width: 600px)" srcset="/assets/images/banner-m.webp">
+        <source media="(min-width: 601px)" srcset="/assets/images/banner.webp">
+        <img aria-hidden="true" decoding="async" src="/assets/images/banner.jpg" alt="massage" loading="eager" width="2500" height="1667">
+    </picture>
+</section>
+
+<!-- ============================================ -->
+<!--      Permanent Makeup & Facial Treatments    -->
+<!-- ============================================ -->
+
+<section id="pricing-995">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Pricing</span>
+            <h2 class="cs-title">Permanent Makeup & Facial Treatments</h2>
+            <!--Menu-->
+            <ul class="cs-menu-group">
+                <li class="cs-menu-item">
+                    <h3 class="cs-h3">
+                        <span class="cs-header">Eyebrow Tinting</span>
+                        <span class="cs-price">£30</span>
+                    </h3>
+                    <p class="cs-menu-text">
+                        Semi-permanent color enhancement for your brows, creating definition and shape that lasts.
+                    </p>
+                </li>
+                <li class="cs-menu-item">
+                    <h3 class="cs-h3">
+                        <span class="cs-header">Eyeliner Tattoo</span>
+                        <span class="cs-price">£180</span>
+                    </h3>
+                    <p class="cs-menu-text">
+                        Long-lasting eyeliner enhancement that defines your eyes beautifully without daily application.
+                    </p>
+                </li>
+                <li class="cs-menu-item">
+                    <h3 class="cs-h3">
+                        <span class="cs-header">Lip-liner Tattoo</span>
+                        <span class="cs-price">£180</span>
+                    </h3>
+                    <p class="cs-menu-text">
+                        Permanent lip contour that enhances the shape and definition of your lips for a perfect outline.
+                    </p>
+                </li>
+                <li class="cs-menu-item">
+                    <h3 class="cs-h3">
+                        <span class="cs-header">Full Lip Tattoo</span>
+                        <span class="cs-price">£220</span>
+                    </h3>
+                    <p class="cs-menu-text">
+                        Complete lip color enhancement that provides lasting pigmentation for a naturally fuller appearance.
+                    </p>
+                </li>
+                <li class="cs-menu-item">
+                    <h3 class="cs-h3">
+                        <span class="cs-header">Eyebrow Semi-Permanent Make-Up</span>
+                        <span class="cs-price">£220</span>
+                    </h3>
+                    <p class="cs-menu-text">
+                        Advanced eyebrow enhancement technique creating natural-looking, perfectly shaped brows that last.
+                    </p>
+                </li>
+            </ul>
+        </div>
+       <picture class="cs-picture">
+            <!--Mobile Image -->
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/lips.jpg" | resize({width: 576, height: 760}) | avif %}" type="image/avif">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/lips.jpg" | resize({width: 576, height: 760}) | webp %}" type="image/webp">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/lips.jpg" | resize({width: 576, height: 760}) | jpeg %}" type="image/jpeg">
+            <!--Tablet Image -->
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/lips.jpg" | resize({width: 930, height: 1450}) | avif %}" type="image/avif">
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/lips.jpg" | resize({width: 930, height: 1450}) | webp %}" type="image/webp">
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/lips.jpg" | resize({width: 930, height: 1450}) | jpeg %}" type="image/jpeg">
+            <!--Desktop Image -->
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/lips.jpg" | resize({width: 1042, height: 1478}) | avif %}" type="image/avif">
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/lips.jpg" | resize({width: 1042, height: 1478}) | webp %}" type="image/webp">
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/lips.jpg" | resize({width: 1042, height: 1478}) | jpeg %}" type="image/jpeg">
+            <img src="{% getUrl "/assets/images/lips.jpg" | resize({width: 1042, height: 1478}) | jpeg %}" alt="lip tatoo" width="521" height="640" loading="lazy" decoding="async">
+        </picture>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--                Facial Waxing                 -->
+<!-- ============================================ -->
+
+<section id="pricing-r-995">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Pricing</span>
+            <h2 class="cs-title">Facial Waxing</h2>
+            <!--Menu-->
+            <ul class="cs-menu-group">
+                <li class="cs-menu-item">
+                    <h3 class="cs-h3">
+                        <span class="cs-header">Eyebrow Tidy</span>
+                        <span class="cs-price">£15</span>
+                    </h3>
+                    <p class="cs-menu-text">
+                        Precise shaping to define and enhance your natural brow line.
+                    </p>
+                </li>
+                <li class="cs-menu-item">
+                    <h3 class="cs-h3">
+                        <span class="cs-header">Eyebrow Re-shape</span>
+                        <span class="cs-price">£15</span>
+                    </h3>
+                    <p class="cs-menu-text">
+                        Complete brow transformation to frame your face beautifully.
+                    </p>
+                </li>
+                <li class="cs-menu-item">
+                    <h3 class="cs-h3">
+                        <span class="cs-header">Lip & Chin Wax</span>
+                        <span class="cs-price">£20</span>
+                    </h3>
+                    <p class="cs-menu-text">
+                        Smooth, hair-free finish for a polished and refined appearance.
+                    </p>
+                </li>
+                <li class="cs-menu-item">
+                    <h3 class="cs-h3">
+                        <span class="cs-header">Cheeks Wax</span>
+                        <span class="cs-price">£20</span>
+                    </h3>
+                    <p class="cs-menu-text">
+                        Gentle removal of unwanted facial hair for a flawless complexion.
+                    </p>
+                </li>
+                <li class="cs-menu-item">
+                    <h3 class="cs-h3">
+                        <span class="cs-header">Full-face Wax</span>
+                        <span class="cs-price">£35</span>
+                    </h3>
+                    <p class="cs-menu-text">
+                        Complete facial hair removal for a smooth, radiant appearance.
+                    </p>
+                </li>
+            </ul>
+        </div>
+        <picture class="cs-picture">
+            <!--Mobile Image -->
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/face-wax.jpg" | resize({width: 576, height: 760}) | avif %}" type="image/avif">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/face-wax.jpg" | resize({width: 576, height: 760}) | webp %}" type="image/webp">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/face-wax.jpg" | resize({width: 576, height: 760}) | jpeg %}" type="image/jpeg">
+            <!--Tablet Image -->
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/face-wax.jpg" | resize({width: 930, height: 1450}) | avif %}" type="image/avif">
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/face-wax.jpg" | resize({width: 930, height: 1450}) | webp %}" type="image/webp">
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/face-wax.jpg" | resize({width: 930, height: 1450}) | jpeg %}" type="image/jpeg">
+            <!--Desktop Image -->
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/face-wax.jpg" | resize({width: 1042, height: 1478}) | avif %}" type="image/avif">
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/face-wax.jpg" | resize({width: 1042, height: 1478}) | webp %}" type="image/webp">
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/face-wax.jpg" | resize({width: 1042, height: 1478}) | jpeg %}" type="image/jpeg">
+            <img src="{% getUrl "/assets/images/face-wax.jpg" | resize({width: 1042, height: 1478}) | jpeg %}" alt="ladies face waxing" width="521" height="640" loading="lazy" decoding="async">
+        </picture>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--              Upper Body Waxing               -->
+<!-- ============================================ -->
+
+<section id="pricing-995">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Pricing</span>
+            <h2 class="cs-title">Upper Body Waxing</h2>
+            <!--Menu-->
+            <ul class="cs-menu-group">
+                <li class="cs-menu-item">
+                    <h3 class="cs-h3">
+                        <span class="cs-header">Underarm Wax</span>
+                        <span class="cs-price">£30</span>
+                    </h3>
+                    <p class="cs-menu-text">
+                        Effective removal of underarm hair for lasting smoothness and comfort.
+                    </p>
+                </li>
+                <li class="cs-menu-item">
+                    <h3 class="cs-h3">
+                        <span class="cs-header">Stomach Wax</span>
+                        <span class="cs-price">£25</span>
+                    </h3>
+                    <p class="cs-menu-text">
+                        Gentle hair removal for a smooth, hair-free abdominal area.
+                    </p>
+                </li>
+                <li class="cs-menu-item">
+                    <h3 class="cs-h3">
+                        <span class="cs-header">1/2 Arm Wax</span>
+                        <span class="cs-price">£15</span>
+                    </h3>
+                    <p class="cs-menu-text">
+                        From wrist to elbow, leaving your lower arms silky smooth.
+                    </p>
+                </li>
+                <li class="cs-menu-item">
+                    <h3 class="cs-h3">
+                        <span class="cs-header">Full Arm Wax</span>
+                        <span class="cs-price">£25</span>
+                    </h3>
+                    <p class="cs-menu-text">
+                        Complete arm hair removal from wrist to shoulder for a flawless finish.
+                    </p>
+                </li>
+                <li class="cs-menu-item">
+                    <h3 class="cs-h3">
+                        <span class="cs-header">Back & Shoulder Wax</span>
+                        <span class="cs-price">£35</span>
+                    </h3>
+                    <p class="cs-menu-text">
+                        Thorough removal of unwanted hair for a clean, smooth upper back and shoulders.
+                    </p>
+                </li>
+            </ul>
+        </div>
+        <picture class="cs-picture">
+            <!--Mobile Image -->
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/upperbody.jpg" | resize({width: 576, height: 760}) | avif %}" type="image/avif">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/upperbody.jpg" | resize({width: 576, height: 760}) | webp %}" type="image/webp">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/upperbody.jpg" | resize({width: 576, height: 760}) | jpeg %}" type="image/jpeg">
+            <!--Tablet Image -->
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/upperbody.jpg" | resize({width: 930, height: 1450}) | avif %}" type="image/avif">
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/upperbody.jpg" | resize({width: 930, height: 1450}) | webp %}" type="image/webp">
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/upperbody.jpg" | resize({width: 930, height: 1450}) | jpeg %}" type="image/jpeg">
+            <!--Desktop Image -->
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/upperbody.jpg" | resize({width: 1042, height: 1478}) | avif %}" type="image/avif">
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/upperbody.jpg" | resize({width: 1042, height: 1478}) | webp %}" type="image/webp">
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/upperbody.jpg" | resize({width: 1042, height: 1478}) | jpeg %}" type="image/jpeg">
+            <img src="{% getUrl "/assets/images/upperbody.jpg" | resize({width: 1042, height: 1478}) | jpeg %}" alt="image description" width="521" height="640" loading="lazy" decoding="async">
+        </picture>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--             Lower Body Waxing                -->
+<!-- ============================================ -->
+
+<section id="pricing-r-995">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Pricing</span>
+            <h2 class="cs-title">Lower Body Waxing</h2>
+            <!--Menu-->
+            <ul class="cs-menu-group">
+                <li class="cs-menu-item">
+                    <h3 class="cs-h3">
+                        <span class="cs-header">Basic Bikini Wax</span>
+                        <span class="cs-price">£30</span>
+                    </h3>
+                    <p class="cs-menu-text">
+                        Classic bikini line hair removal for a neat, tidy appearance.
+                    </p>
+                </li>
+                <li class="cs-menu-item">
+                    <h3 class="cs-h3">
+                        <span class="cs-header">High Bikini Wax</span>
+                        <span class="cs-price">£35</span>
+                    </h3>
+                    <p class="cs-menu-text">
+                        Extended bikini wax that removes more hair for greater coverage.
+                    </p>
+                </li>
+                <li class="cs-menu-item">
+                    <h3 class="cs-h3">
+                        <span class="cs-header">Brazilian Wax</span>
+                        <span class="cs-price">£40</span>
+                    </h3>
+                    <p class="cs-menu-text">
+                        Thorough hair removal leaving a small, neat strip in the front area.
+                    </p>
+                </li>
+                <li class="cs-menu-item">
+                    <h3 class="cs-h3">
+                        <span class="cs-header">Hollywood Wax</span>
+                        <span class="cs-price">£45</span>
+                    </h3>
+                    <p class="cs-menu-text">
+                        Complete hair removal for a perfectly smooth finish all over.
+                    </p>
+                </li>
+                <li class="cs-menu-item">
+                    <h3 class="cs-h3">
+                        <span class="cs-header">Full Leg Wax</span>
+                        <span class="cs-price">£35</span>
+                    </h3>
+                    <p class="cs-menu-text">
+                        Comprehensive leg waxing from ankle to thigh for silky-smooth skin.
+                    </p>
+                </li>
+            </ul>
+        </div>
+        <picture class="cs-picture">
+            <!--Mobile Image -->
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/wax.jpg" | resize({width: 576, height: 760}) | avif %}" type="image/avif">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/wax.jpg" | resize({width: 576, height: 760}) | webp %}" type="image/webp">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/wax.jpg" | resize({width: 576, height: 760}) | jpeg %}" type="image/jpeg">
+            <!--Tablet Image -->
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/wax.jpg" | resize({width: 930, height: 1450}) | avif %}" type="image/avif">
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/wax.jpg" | resize({width: 930, height: 1450}) | webp %}" type="image/webp">
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/wax.jpg" | resize({width: 930, height: 1450}) | jpeg %}" type="image/jpeg">
+            <!--Desktop Image -->
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/wax.jpg" | resize({width: 1042, height: 1478}) | avif %}" type="image/avif">
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/wax.jpg" | resize({width: 1042, height: 1478}) | webp %}" type="image/webp">
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/wax.jpg" | resize({width: 1042, height: 1478}) | jpeg %}" type="image/jpeg">
+            <img src="{% getUrl "/assets/images/wax.jpg" | resize({width: 1042, height: 1478}) | jpeg %}" alt="image description" width="521" height="640" loading="lazy" decoding="async">
+        </picture>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--       Upper Body Waxing for Gents            -->
+<!-- ============================================ -->
+
+<section id="pricing-995">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Pricing</span>
+            <h2 class="cs-title">Upper Body Waxing for Gents</h2>
+            <!--Menu-->
+            <ul class="cs-menu-group">
+                <li class="cs-menu-item">
+                    <h3 class="cs-h3">
+                        <span class="cs-header">Back, Neck and Shoulders Wax</span>
+                        <span class="cs-price">£45</span>
+                    </h3>
+                    <p class="cs-menu-text">
+                        Complete hair removal from the back, neck and shoulders for gentlemen seeking a smooth, groomed appearance.
+                    </p>
+                </li>
+                <li class="cs-menu-item">
+                    <h3 class="cs-h3">
+                        <span class="cs-header">Chest Wax</span>
+                        <span class="cs-price">£30</span>
+                    </h3>
+                    <p class="cs-menu-text">
+                        Thorough removal of chest hair for gents who prefer a clean, hair-free chest area.
+                    </p>
+                </li>
+                <li class="cs-menu-item">
+                    <h3 class="cs-h3">
+                        <span class="cs-header">Shoulders Wax</span>
+                        <span class="cs-price">£25</span>
+                    </h3>
+                    <p class="cs-menu-text">
+                        Targeted treatment for gents to remove unwanted hair from the shoulder area for a refined look.
+                    </p>
+                </li>
+                <li class="cs-menu-item">
+                    <h3 class="cs-h3">
+                        <span class="cs-header">Stomach Wax</span>
+                        <span class="cs-price">£25</span>
+                    </h3>
+                    <p class="cs-menu-text">
+                        Effective hair removal treatment for gentlemen desiring a smooth abdominal area.
+                    </p>
+                </li>
+                <li class="cs-menu-item">
+                    <h3 class="cs-h3">
+                        <span class="cs-header">Underarm Wax</span>
+                        <span class="cs-price">£30</span>
+                    </h3>
+                    <p class="cs-menu-text">
+                        Professional underarm hair removal for gents, providing lasting smoothness and freshness.
+                    </p>
+                </li>
+            </ul>
+        </div>
+        <picture class="cs-picture">
+            <!--Mobile Image -->
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/gents-upperbody.jpg" | resize({width: 576, height: 760}) | avif %}" type="image/avif">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/gents-upperbody.jpg" | resize({width: 576, height: 760}) | webp %}" type="image/webp">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/gents-upperbody.jpg" | resize({width: 576, height: 760}) | jpeg %}" type="image/jpeg">
+            <!--Tablet Image -->
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/gents-upperbody.jpg" | resize({width: 930, height: 1450}) | avif %}" type="image/avif">
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/gents-upperbody.jpg" | resize({width: 930, height: 1450}) | webp %}" type="image/webp">
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/gents-upperbody.jpg" | resize({width: 930, height: 1450}) | jpeg %}" type="image/jpeg">
+            <!--Desktop Image -->
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/gents-upperbody.jpg" | resize({width: 1042, height: 1478}) | avif %}" type="image/avif">
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/gents-upperbody.jpg" | resize({width: 1042, height: 1478}) | webp %}" type="image/webp">
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/gents-upperbody.jpg" | resize({width: 1042, height: 1478}) | jpeg %}" type="image/jpeg">
+            <img src="{% getUrl "/assets/images/gents-upperbody.jpg" | resize({width: 1042, height: 1478}) | jpeg %}" alt="image description" width="521" height="640" loading="lazy" decoding="async">
+        </picture>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--  Lower Body & Complete Waxing for Gents      -->
+<!-- ============================================ -->
+
+<section id="pricing-r-995">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Pricing</span>
+            <h2 class="cs-title">Lower Body & Complete Waxing for Gents</h2>
+            <!--Menu-->
+            <ul class="cs-menu-group">
+                <li class="cs-menu-item">
+                    <h3 class="cs-h3">
+                        <span class="cs-header">Full Arm Wax</span>
+                        <span class="cs-price">£35</span>
+                    </h3>
+                    <p class="cs-menu-text">
+                        Complete arm hair removal for gentlemen, from wrist to shoulder for a smooth, polished appearance.
+                    </p>
+                </li>
+                <li class="cs-menu-item">
+                    <h3 class="cs-h3">
+                        <span class="cs-header">Full Leg Wax</span>
+                        <span class="cs-price">£45</span>
+                    </h3>
+                    <p class="cs-menu-text">
+                        Thorough leg hair removal for gents, leaving skin smooth from ankle to thigh.
+                    </p>
+                </li>
+                <li class="cs-menu-item">
+                    <h3 class="cs-h3">
+                        <span class="cs-header">Full Body Wax</span>
+                        <span class="cs-price">£150</span>
+                    </h3>
+                    <p class="cs-menu-text">
+                        Comprehensive hair removal treatment for gentlemen seeking complete body smoothness.
+                    </p>
+                </li>
+                <li class="cs-menu-item">
+                    <h3 class="cs-h3">
+                        <span class="cs-header">Back & Leg Combination</span>
+                        <span class="cs-price">£80</span>
+                    </h3>
+                    <p class="cs-menu-text">
+                        Popular combination treatment for gents targeting both back and legs for an efficient grooming session.
+                    </p>
+                </li>
+                <li class="cs-menu-item">
+                    <h3 class="cs-h3">
+                        <span class="cs-header">Chest & Stomach Combo</span>
+                        <span class="cs-price">£50</span>
+                    </h3>
+                    <p class="cs-menu-text">
+                        Streamlined treatment for gentlemen focusing on the torso area for a clean, groomed appearance.
+                    </p>
+                </li>
+            </ul>
+        </div>
+        <picture class="cs-picture">
+            <!--Mobile Image -->
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/gents-lower.jpg" | resize({width: 576, height: 760}) | avif %}" type="image/avif">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/gents-lower.jpg" | resize({width: 576, height: 760}) | webp %}" type="image/webp">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/gents-lower.jpg" | resize({width: 576, height: 760}) | jpeg %}" type="image/jpeg">
+            <!--Tablet Image -->
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/gents-lower.jpg" | resize({width: 930, height: 1450}) | avif %}" type="image/avif">
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/gents-lower.jpg" | resize({width: 930, height: 1450}) | webp %}" type="image/webp">
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/gents-lower.jpg" | resize({width: 930, height: 1450}) | jpeg %}" type="image/jpeg">
+            <!--Desktop Image -->
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/gents-lower.jpg" | resize({width: 1042, height: 1478}) | avif %}" type="image/avif">
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/gents-lower.jpg" | resize({width: 1042, height: 1478}) | webp %}" type="image/webp">
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/gents-lower.jpg" | resize({width: 1042, height: 1478}) | jpeg %}" type="image/jpeg">
+            <img src="{% getUrl "/assets/images/gents-lower.jpg" | resize({width: 1042, height: 1478}) | jpeg %}" alt="image description" width="521" height="640" loading="lazy" decoding="async">
+        </picture>
+    </div>
+</section>
+                                
+
+{% endblock %}

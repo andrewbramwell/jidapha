@@ -1,0 +1,511 @@
+---
+title: 'Therapeutic Treatments | Code Stitch Web Designs'
+description: 'Meta description for the page'
+preloadImg: '/assets/images/cabinets2.jpg'
+permalink: 'therapeutic-treatments/'
+eleventyNavigation:
+    key: Therapeutic Treatments
+    order: 3200
+    parent: Massages
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/massages.css">
+    <link rel="preload" as="image" href="{% getUrl "/assets/images/banner.jpg" | resize({width: 2560, height: 1136}) | avif %}">
+{% endblock %}
+
+{% block body %}
+
+<section id="int-hero">
+    <h1 id="home-h">Therapeutic Treatments</h1>
+    <picture>
+        <source media="(max-width: 600px)" srcset="/assets/images/banner-m.webp">
+        <source media="(min-width: 601px)" srcset="/assets/images/banner.webp">
+        <img aria-hidden="true" decoding="async" src="/assets/images/banner.jpg" alt="massage" loading="eager" width="2500" height="1667">
+    </picture>
+</section>
+
+<!-- ============================================ -->
+<!--                  Menu Group                  -->
+<!-- ============================================ -->
+
+<div id="cs-menu-group-1037">
+    <div class="cs-container">
+        <div class="cs-content">
+            <picture class="cs-icon-wrapper">
+                <img class="cs-icon" decoding="async" src="/assets/svgs/logo-black.svg" alt="divider" width="181" height="36" aria-hidden="true">
+            </picture>
+            <h2 class="cs-title">Our Menu</h2>
+            <div class="cs-button-group">
+                <button class="cs-button cs-active" data-filter="one" onclick="window.location.href='#cs-menu-group';">
+                    60 minutes
+                </button>
+                <button class="cs-button" data-filter="two" onclick="window.location.href='#cs-menu-group';">
+                    90 minutes
+                </button>
+            </div>
+        </div>
+        <!--60 mins-->
+        <div id="cs-menu1-1037" class="cs-menu-group" data-category="one">
+            <!--60 mins Section 1-->
+            <section class="cs-menu">
+                <div class="cs-container">
+                    <ul class="cs-card-group">
+                        <li class="cs-item">
+                            <picture class="cs-picture">
+                                <!--Mobile Image -->
+                                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/07.jpg" | resize({width: 152, height: 152}) | avif %}" type="image/avif">
+                                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/07.jpg" | resize({width: 152, height: 152}) | webp %}" type="image/webp">
+                                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/07.jpg" | resize({width: 152, height: 152}) | jpeg %}" type="image/jpeg">
+                                <!--Tablet Image -->
+                                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/07.jpg" | resize({width: 288, height: 288}) | avif %}" type="image/avif">
+                                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/07.jpg" | resize({width: 288, height: 288}) | webp %}" type="image/webp">
+                                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/07.jpg" | resize({width: 288, height: 288}) | jpeg %}" type="image/jpeg">
+                                <!--Desktop Image -->
+                                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/07.jpg" | resize({width: 320, height: 320}) | avif %}" type="image/avif">
+                                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/07.jpg" | resize({width: 320, height: 320}) | webp %}" type="image/webp">
+                                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/07.jpg" | resize({width: 320, height: 320}) | jpeg %}" type="image/jpeg">
+                                <img src="{% getUrl "/assets/images/07.jpg" | resize({width: 320, height: 320}) | jpeg %}" alt="massage" width="160" height="160" loading="lazy" decoding="async" aria-hidden="true">
+                                </picture>
+                                <div class="cs-info">
+                                <h3 class="cs-h3">
+                                    <span class="cs-name">Deep Tissue Massage / Myofascial Release</span>
+                                    <span class="cs-price">
+                                        £70
+                                    </span>
+                                </h3>
+                                <p class="cs-item-p">
+                                    Medical-grade techniques for sciatic pain and office syndrome with gentle deep tissue work.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="cs-item">
+                            <picture class="cs-picture">
+                                <!--Mobile Image -->
+                                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/08.jpg" | resize({width: 152, height: 152}) | avif %}" type="image/avif">
+                                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/08.jpg" | resize({width: 152, height: 152}) | webp %}" type="image/webp">
+                                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/08.jpg" | resize({width: 152, height: 152}) | jpeg %}" type="image/jpeg">
+                                <!--Tablet Image -->
+                                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/08.jpg" | resize({width: 288, height: 288}) | avif %}" type="image/avif">
+                                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/08.jpg" | resize({width: 288, height: 288}) | webp %}" type="image/webp">
+                                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/08.jpg" | resize({width: 288, height: 288}) | jpeg %}" type="image/jpeg">
+                                <!--Desktop Image -->
+                                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/08.jpg" | resize({width: 320, height: 320}) | avif %}" type="image/avif">
+                                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/08.jpg" | resize({width: 320, height: 320}) | webp %}" type="image/webp">
+                                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/08.jpg" | resize({width: 320, height: 320}) | jpeg %}" type="image/jpeg">
+                                <img src="{% getUrl "/assets/images/08.jpg" | resize({width: 320, height: 320}) | jpeg %}" alt="massage" width="160" height="160" loading="lazy" decoding="async" aria-hidden="true">
+                                </picture>
+                                <div class="cs-info">
+                                <h3 class="cs-h3">
+                                    <span class="cs-name">G5 Machine + Deep Tissue</span>
+                                    <span class="cs-price">
+                                        £70
+                                    </span>
+                                </h3>
+                                <p class="cs-item-p">
+                                    Cutting-edge G5 technology combined with targeted deep tissue manual therapy techniques.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="cs-item">
+                            <picture class="cs-picture">
+                                <!--Mobile Image -->
+                                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/09.jpg" | resize({width: 152, height: 152}) | avif %}" type="image/avif">
+                                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/09.jpg" | resize({width: 152, height: 152}) | webp %}" type="image/webp">
+                                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/09.jpg" | resize({width: 152, height: 152}) | jpeg %}" type="image/jpeg">
+                                <!--Tablet Image -->
+                                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/09.jpg" | resize({width: 288, height: 288}) | avif %}" type="image/avif">
+                                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/09.jpg" | resize({width: 288, height: 288}) | webp %}" type="image/webp">
+                                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/09.jpg" | resize({width: 288, height: 288}) | jpeg %}" type="image/jpeg">
+                                <!--Desktop Image -->
+                                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/09.jpg" | resize({width: 320, height: 320}) | avif %}" type="image/avif">
+                                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/09.jpg" | resize({width: 320, height: 320}) | webp %}" type="image/webp">
+                                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/09.jpg" | resize({width: 320, height: 320}) | jpeg %}" type="image/jpeg">
+                                <img src="{% getUrl "/assets/images/09.jpg" | resize({width: 320, height: 320}) | jpeg %}" alt="massage" width="160" height="160" loading="lazy" decoding="async" aria-hidden="true">
+                                </picture>
+                               <div class="cs-info">
+                                <h3 class="cs-h3">
+                                    <span class="cs-name">Acupuncture Treatment</span>
+                                    <span class="cs-price">
+                                        £70
+                                    </span>
+                                </h3>
+                                <p class="cs-item-p">
+                                    Precise acupuncture with medical massage techniques addressing specific conditions through holistic healing.
+                                </p>
+                            </div>
+                         </li>
+                        <li class="cs-item">
+                            <picture class="cs-picture">
+                                <!--Mobile Image -->
+                                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/10.jpg" | resize({width: 152, height: 152}) | avif %}" type="image/avif">
+                                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/10.jpg" | resize({width: 152, height: 152}) | webp %}" type="image/webp">
+                                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/10.jpg" | resize({width: 152, height: 152}) | jpeg %}" type="image/jpeg">
+                                <!--Tablet Image -->
+                                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/10.jpg" | resize({width: 288, height: 288}) | avif %}" type="image/avif">
+                                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/10.jpg" | resize({width: 288, height: 288}) | webp %}" type="image/webp">
+                                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/10.jpg" | resize({width: 288, height: 288}) | jpeg %}" type="image/jpeg">
+                                <!--Desktop Image -->
+                                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/10.jpg" | resize({width: 320, height: 320}) | avif %}" type="image/avif">
+                                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/10.jpg" | resize({width: 320, height: 320}) | webp %}" type="image/webp">
+                                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/10.jpg" | resize({width: 320, height: 320}) | jpeg %}" type="image/jpeg">
+                                <img src="{% getUrl "/assets/images/10.jpg" | resize({width: 320, height: 320}) | jpeg %}" alt="massage" width="160" height="160" loading="lazy" decoding="async" aria-hidden="true">
+                                </picture>
+                                <div class="cs-info">
+                                <h3 class="cs-h3">
+                                    <span class="cs-name">Lymphatic Drainage Massage</span>
+                                    <span class="cs-price">
+                                        £60
+                                    </span>
+                                </h3>
+                                <p class="cs-item-p">
+                                    Combined lymphatic techniques with G5 technology for concentrated congestion relief.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="cs-item">
+                            <picture class="cs-picture">
+                                <!--Mobile Image -->
+                                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/11.jpg" | resize({width: 152, height: 152}) | avif %}" type="image/avif">
+                                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/11.jpg" | resize({width: 152, height: 152}) | webp %}" type="image/webp">
+                                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/11.jpg" | resize({width: 152, height: 152}) | jpeg %}" type="image/jpeg">
+                                <!--Tablet Image -->
+                                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/11.jpg" | resize({width: 288, height: 288}) | avif %}" type="image/avif">
+                                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/11.jpg" | resize({width: 288, height: 288}) | webp %}" type="image/webp">
+                                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/11.jpg" | resize({width: 288, height: 288}) | jpeg %}" type="image/jpeg">
+                                <!--Desktop Image -->
+                                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/11.jpg" | resize({width: 320, height: 320}) | avif %}" type="image/avif">
+                                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/11.jpg" | resize({width: 320, height: 320}) | webp %}" type="image/webp">
+                                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/11.jpg" | resize({width: 320, height: 320}) | jpeg %}" type="image/jpeg">
+                                <img src="{% getUrl "/assets/images/11.jpg" | resize({width: 320, height: 320}) | jpeg %}" alt="massage" width="160" height="160" loading="lazy" decoding="async" aria-hidden="true">
+                                </picture>
+                                <div class="cs-info">
+                                <h3 class="cs-h3">
+                                    <span class="cs-name">Myofascial Release / Pain Syndrome</span>
+                                    <span class="cs-price">
+                                        £65
+                                    </span>
+                                </h3>
+                                <p class="cs-item-p">
+                                    Specialised techniques for chronic pain conditions with personalised self-care guidance.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="cs-item">
+                            <picture class="cs-picture">
+                                <!--Mobile Image -->
+                                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/12.jpg" | resize({width: 152, height: 152}) | avif %}" type="image/avif">
+                                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/12.jpg" | resize({width: 152, height: 152}) | webp %}" type="image/webp">
+                                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/12.jpg" | resize({width: 152, height: 152}) | jpeg %}" type="image/jpeg">
+                                <!--Tablet Image -->
+                                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/12.jpg" | resize({width: 288, height: 288}) | avif %}" type="image/avif">
+                                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/12.jpg" | resize({width: 288, height: 288}) | webp %}" type="image/webp">
+                                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/12.jpg" | resize({width: 288, height: 288}) | jpeg %}" type="image/jpeg">
+                                <!--Desktop Image -->
+                                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/12.jpg" | resize({width: 320, height: 320}) | avif %}" type="image/avif">
+                                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/12.jpg" | resize({width: 320, height: 320}) | webp %}" type="image/webp">
+                                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/12.jpg" | resize({width: 320, height: 320}) | jpeg %}" type="image/jpeg">
+                                <img src="{% getUrl "/assets/images/12.jpg" | resize({width: 320, height: 320}) | jpeg %}" alt="massage" width="160" height="160" loading="lazy" decoding="async" aria-hidden="true">
+                                </picture>
+                                <div class="cs-info">
+                                <h3 class="cs-h3">
+                                    <span class="cs-name">Karsai / Maya Abdominal Massage</span>
+                                    <span class="cs-price">
+                                        £65
+                                    </span>
+                                </h3>
+                                <p class="cs-item-p">
+                                    Focused abdominal therapy addressing digestive issues and emotional balance.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="cs-item">
+                            <picture class="cs-picture">
+                                <!--Mobile Image -->
+                                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/13.jpg" | resize({width: 152, height: 152}) | avif %}" type="image/avif">
+                                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/13.jpg" | resize({width: 152, height: 152}) | webp %}" type="image/webp">
+                                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/13.jpg" | resize({width: 152, height: 152}) | jpeg %}" type="image/jpeg">
+                                <!--Tablet Image -->
+                                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/13.jpg" | resize({width: 288, height: 288}) | avif %}" type="image/avif">
+                                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/13.jpg" | resize({width: 288, height: 288}) | webp %}" type="image/webp">
+                                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/13.jpg" | resize({width: 288, height: 288}) | jpeg %}" type="image/jpeg">
+                                <!--Desktop Image -->
+                                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/13.jpg" | resize({width: 320, height: 320}) | avif %}" type="image/avif">
+                                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/13.jpg" | resize({width: 320, height: 320}) | webp %}" type="image/webp">
+                                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/13.jpg" | resize({width: 320, height: 320}) | jpeg %}" type="image/jpeg">
+                                <img src="{% getUrl "/assets/images/13.jpg" | resize({width: 320, height: 320}) | jpeg %}" alt="massage" width="160" height="160" loading="lazy" decoding="async" aria-hidden="true">
+                                </picture>
+                                <div class="cs-info">
+                                <h3 class="cs-h3">
+                                    <span class="cs-name">Infrared-Light + Deep Tissue + Holistic</span>
+                                    <span class="cs-price">
+                                        £70
+                                    </span>
+                                </h3>
+                                <p class="cs-item-p">
+                                    Advanced light therapy combined with deep tissue and holistic healing approaches.
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+        <!--90 min-->
+        <div id="cs-menu2-1037" class="cs-menu-group" data-category="two">
+            <!--90 min Section 1-->
+            <section class="cs-menu">
+                <div class="cs-container">
+                    <ul class="cs-card-group">
+                        <li class="cs-item">
+                            <picture class="cs-picture">
+                                <!--Mobile Image -->
+                                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/07.jpg" | resize({width: 152, height: 152}) | avif %}" type="image/avif">
+                                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/07.jpg" | resize({width: 152, height: 152}) | webp %}" type="image/webp">
+                                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/07.jpg" | resize({width: 152, height: 152}) | jpeg %}" type="image/jpeg">
+                                <!--Tablet Image -->
+                                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/07.jpg" | resize({width: 288, height: 288}) | avif %}" type="image/avif">
+                                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/07.jpg" | resize({width: 288, height: 288}) | webp %}" type="image/webp">
+                                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/07.jpg" | resize({width: 288, height: 288}) | jpeg %}" type="image/jpeg">
+                                <!--Desktop Image -->
+                                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/07.jpg" | resize({width: 320, height: 320}) | avif %}" type="image/avif">
+                                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/07.jpg" | resize({width: 320, height: 320}) | webp %}" type="image/webp">
+                                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/07.jpg" | resize({width: 320, height: 320}) | jpeg %}" type="image/jpeg">
+                                <img src="{% getUrl "/assets/images/07.jpg" | resize({width: 320, height: 320}) | jpeg %}" alt="massage" width="160" height="160" loading="lazy" decoding="async" aria-hidden="true">
+                                </picture>
+                                <div class="cs-info">
+                                <h3 class="cs-h3">
+                                    <span class="cs-name">Deep Tissue Massage / Myofascial Release</span>
+                                    <span class="cs-price">
+                                        £90
+                                    </span>
+                                </h3>
+                                <p class="cs-item-p">
+                                    Medical-grade techniques for sciatic pain and office syndrome with gentle deep tissue work.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="cs-item">
+                            <picture class="cs-picture">
+                                <!--Mobile Image -->
+                                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/08.jpg" | resize({width: 152, height: 152}) | avif %}" type="image/avif">
+                                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/08.jpg" | resize({width: 152, height: 152}) | webp %}" type="image/webp">
+                                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/08.jpg" | resize({width: 152, height: 152}) | jpeg %}" type="image/jpeg">
+                                <!--Tablet Image -->
+                                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/08.jpg" | resize({width: 288, height: 288}) | avif %}" type="image/avif">
+                                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/08.jpg" | resize({width: 288, height: 288}) | webp %}" type="image/webp">
+                                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/08.jpg" | resize({width: 288, height: 288}) | jpeg %}" type="image/jpeg">
+                                <!--Desktop Image -->
+                                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/08.jpg" | resize({width: 320, height: 320}) | avif %}" type="image/avif">
+                                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/08.jpg" | resize({width: 320, height: 320}) | webp %}" type="image/webp">
+                                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/08.jpg" | resize({width: 320, height: 320}) | jpeg %}" type="image/jpeg">
+                                <img src="{% getUrl "/assets/images/08.jpg" | resize({width: 320, height: 320}) | jpeg %}" alt="massage" width="160" height="160" loading="lazy" decoding="async" aria-hidden="true">
+                                </picture>
+                                <div class="cs-info">
+                                <h3 class="cs-h3">
+                                    <span class="cs-name">G5 Machine + Deep Tissue</span>
+                                    <span class="cs-price">
+                                        £90
+                                    </span>
+                                </h3>
+                                <p class="cs-item-p">
+                                    Cutting-edge G5 technology combined with targeted deep tissue manual therapy techniques.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="cs-item">
+                            <picture class="cs-picture">
+                                <!--Mobile Image -->
+                                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/09.jpg" | resize({width: 152, height: 152}) | avif %}" type="image/avif">
+                                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/09.jpg" | resize({width: 152, height: 152}) | webp %}" type="image/webp">
+                                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/09.jpg" | resize({width: 152, height: 152}) | jpeg %}" type="image/jpeg">
+                                <!--Tablet Image -->
+                                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/09.jpg" | resize({width: 288, height: 288}) | avif %}" type="image/avif">
+                                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/09.jpg" | resize({width: 288, height: 288}) | webp %}" type="image/webp">
+                                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/09.jpg" | resize({width: 288, height: 288}) | jpeg %}" type="image/jpeg">
+                                <!--Desktop Image -->
+                                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/09.jpg" | resize({width: 320, height: 320}) | avif %}" type="image/avif">
+                                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/09.jpg" | resize({width: 320, height: 320}) | webp %}" type="image/webp">
+                                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/09.jpg" | resize({width: 320, height: 320}) | jpeg %}" type="image/jpeg">
+                                <img src="{% getUrl "/assets/images/09.jpg" | resize({width: 320, height: 320}) | jpeg %}" alt="massage" width="160" height="160" loading="lazy" decoding="async" aria-hidden="true">
+                                </picture>
+                               <div class="cs-info">
+                                <h3 class="cs-h3">
+                                    <span class="cs-name">Acupuncture Treatment</span>
+                                    <span class="cs-price">
+                                        £90
+                                    </span>
+                                </h3>
+                                <p class="cs-item-p">
+                                    Precise acupuncture with medical massage techniques addressing specific conditions through holistic healing.
+                                </p>
+                            </div>
+                         </li>
+                        <li class="cs-item">
+                            <picture class="cs-picture">
+                                <!--Mobile Image -->
+                                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/10.jpg" | resize({width: 152, height: 152}) | avif %}" type="image/avif">
+                                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/10.jpg" | resize({width: 152, height: 152}) | webp %}" type="image/webp">
+                                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/10.jpg" | resize({width: 152, height: 152}) | jpeg %}" type="image/jpeg">
+                                <!--Tablet Image -->
+                                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/10.jpg" | resize({width: 288, height: 288}) | avif %}" type="image/avif">
+                                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/10.jpg" | resize({width: 288, height: 288}) | webp %}" type="image/webp">
+                                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/10.jpg" | resize({width: 288, height: 288}) | jpeg %}" type="image/jpeg">
+                                <!--Desktop Image -->
+                                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/10.jpg" | resize({width: 320, height: 320}) | avif %}" type="image/avif">
+                                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/10.jpg" | resize({width: 320, height: 320}) | webp %}" type="image/webp">
+                                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/10.jpg" | resize({width: 320, height: 320}) | jpeg %}" type="image/jpeg">
+                                <img src="{% getUrl "/assets/images/10.jpg" | resize({width: 320, height: 320}) | jpeg %}" alt="massage" width="160" height="160" loading="lazy" decoding="async" aria-hidden="true">
+                                </picture>
+                                <div class="cs-info">
+                                <h3 class="cs-h3">
+                                    <span class="cs-name">Lymphatic Drainage Massage</span>
+                                    <span class="cs-price">
+                                        £90
+                                    </span>
+                                </h3>
+                                <p class="cs-item-p">
+                                    Combined lymphatic techniques with G5 technology for concentrated congestion relief.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="cs-item">
+                            <picture class="cs-picture">
+                                <!--Mobile Image -->
+                                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/11.jpg" | resize({width: 152, height: 152}) | avif %}" type="image/avif">
+                                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/11.jpg" | resize({width: 152, height: 152}) | webp %}" type="image/webp">
+                                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/11.jpg" | resize({width: 152, height: 152}) | jpeg %}" type="image/jpeg">
+                                <!--Tablet Image -->
+                                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/11.jpg" | resize({width: 288, height: 288}) | avif %}" type="image/avif">
+                                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/11.jpg" | resize({width: 288, height: 288}) | webp %}" type="image/webp">
+                                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/11.jpg" | resize({width: 288, height: 288}) | jpeg %}" type="image/jpeg">
+                                <!--Desktop Image -->
+                                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/11.jpg" | resize({width: 320, height: 320}) | avif %}" type="image/avif">
+                                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/11.jpg" | resize({width: 320, height: 320}) | webp %}" type="image/webp">
+                                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/11.jpg" | resize({width: 320, height: 320}) | jpeg %}" type="image/jpeg">
+                                <img src="{% getUrl "/assets/images/11.jpg" | resize({width: 320, height: 320}) | jpeg %}" alt="massage" width="160" height="160" loading="lazy" decoding="async" aria-hidden="true">
+                                </picture>
+                                <div class="cs-info">
+                                <h3 class="cs-h3">
+                                    <span class="cs-name">Myofascial Release / Pain Syndrome</span>
+                                    <span class="cs-price">
+                                        £90
+                                    </span>
+                                </h3>
+                                <p class="cs-item-p">
+                                    Specialised techniques for chronic pain conditions with personalised self-care guidance.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="cs-item">
+                            <picture class="cs-picture">
+                                <!--Mobile Image -->
+                                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/12.jpg" | resize({width: 152, height: 152}) | avif %}" type="image/avif">
+                                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/12.jpg" | resize({width: 152, height: 152}) | webp %}" type="image/webp">
+                                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/12.jpg" | resize({width: 152, height: 152}) | jpeg %}" type="image/jpeg">
+                                <!--Tablet Image -->
+                                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/12.jpg" | resize({width: 288, height: 288}) | avif %}" type="image/avif">
+                                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/12.jpg" | resize({width: 288, height: 288}) | webp %}" type="image/webp">
+                                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/12.jpg" | resize({width: 288, height: 288}) | jpeg %}" type="image/jpeg">
+                                <!--Desktop Image -->
+                                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/12.jpg" | resize({width: 320, height: 320}) | avif %}" type="image/avif">
+                                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/12.jpg" | resize({width: 320, height: 320}) | webp %}" type="image/webp">
+                                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/12.jpg" | resize({width: 320, height: 320}) | jpeg %}" type="image/jpeg">
+                                <img src="{% getUrl "/assets/images/12.jpg" | resize({width: 320, height: 320}) | jpeg %}" alt="massage" width="160" height="160" loading="lazy" decoding="async" aria-hidden="true">
+                                </picture>
+                                <div class="cs-info">
+                                <h3 class="cs-h3">
+                                    <span class="cs-name">Karsai / Maya Abdominal Massage</span>
+                                    <span class="cs-price">
+                                        £90
+                                    </span>
+                                </h3>
+                                <p class="cs-item-p">
+                                    Focused abdominal therapy addressing digestive issues and emotional balance.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="cs-item">
+                            <picture class="cs-picture">
+                                <!--Mobile Image -->
+                                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/13.jpg" | resize({width: 152, height: 152}) | avif %}" type="image/avif">
+                                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/13.jpg" | resize({width: 152, height: 152}) | webp %}" type="image/webp">
+                                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/13.jpg" | resize({width: 152, height: 152}) | jpeg %}" type="image/jpeg">
+                                <!--Tablet Image -->
+                                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/13.jpg" | resize({width: 288, height: 288}) | avif %}" type="image/avif">
+                                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/13.jpg" | resize({width: 288, height: 288}) | webp %}" type="image/webp">
+                                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/13.jpg" | resize({width: 288, height: 288}) | jpeg %}" type="image/jpeg">
+                                <!--Desktop Image -->
+                                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/13.jpg" | resize({width: 320, height: 320}) | avif %}" type="image/avif">
+                                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/13.jpg" | resize({width: 320, height: 320}) | webp %}" type="image/webp">
+                                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/13.jpg" | resize({width: 320, height: 320}) | jpeg %}" type="image/jpeg">
+                                <img src="{% getUrl "/assets/images/13.jpg" | resize({width: 320, height: 320}) | jpeg %}" alt="massage" width="160" height="160" loading="lazy" decoding="async" aria-hidden="true">
+                                </picture>
+                                <div class="cs-info">
+                                <h3 class="cs-h3">
+                                    <span class="cs-name">Infrared-Light + Deep Tissue + Holistic</span>
+                                    <span class="cs-price">
+                                        £90
+                                    </span>
+                                </h3>
+                                <p class="cs-item-p">
+                                    Advanced light therapy combined with deep tissue and holistic healing approaches.
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+        <a href="{{client.onlineBooking}}" target="_blank" rel="noopener"class="cs-button-solid">Book A Massage</a>
+    </div>
+</div>
+
+<script>class CS_MenuFilter {
+    filtersSelector = '.cs-button'
+    menuSelector = '.cs-menu-group'
+    activeClass = 'cs-active'
+    hiddenClass = 'cs-hidden'
+
+    constructor() {
+        this.$menus = document.querySelectorAll(this.menuSelector)
+        const $filters = document.querySelectorAll(this.filtersSelector)
+
+        this.onClick($filters[0])
+
+        for (const $filter of $filters) {
+            $filter.addEventListener('click', () => this.onClick($filter))
+        }
+    }
+
+    onClick($filter) {
+        this.filter($filter.dataset.filter)
+
+        const { activeClass } = this
+
+        this.$activeFilter?.classList.remove(activeClass)
+        $filter.classList.add(activeClass)
+
+        this.$activeFilter = $filter
+    }
+
+    filter(filter) {
+        const showAll = filter == 'all'
+        const { hiddenClass } = this
+
+        for (const $menu of this.$menus) {
+            const show = showAll || $menu.dataset.category == filter
+            $menu.classList.toggle(hiddenClass, !show)
+        }
+    }
+}
+
+new CS_MenuFilter()
+</script>                              
+
+{% endblock %}
+
+
+

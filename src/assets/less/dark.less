@@ -9,7 +9,6 @@
     // Dark Mode Color Scheme
     :root {
         --dark: #121212;
-        --darker: #0D0D0D;
         --medium: #282828;
         --accent: #404040;
         --bodyTextColorWhite: #fafbfc;
@@ -44,3 +43,12 @@
         display: none;
     }
 }
+
+body.dark-mode .cs-button-solid {
+    background-color: var(--secondary) ;
+    color: #fff;
+    transition: color .3s;
+  }
+  body.dark-mode .cs-button-solid:before {
+    background-color: var(--primary);
+  }
