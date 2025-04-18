@@ -103,7 +103,7 @@ eleventyNavigation:
             <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hero-1.jpg" | resize({width: 1920, height: 1714}) | avif %}" type="image/avif">
             <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hero-1.jpg" | resize({width: 1920, height: 1714}) | webp %}" type="image/webp">
             <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hero-1.jpg" | resize({width: 1920, height: 1714}) | jpeg %}" type="image/jpeg">
-            <img src="{% getUrl "/assets/images/hero-1.jpg" | resize({width: 1920, height: 1714}) | jpeg %}" alt="image description" width="960" height="857" loading="lazy" decoding="async" aria-hidden="true">
+            <img src="{% getUrl "/assets/images/hero-1.jpg" | resize({width: 1920, height: 1714}) | jpeg %}" alt="image description" width="960" height="857" decoding="async" aria-hidden="true">
         </picture>
     </div>
 </section>
