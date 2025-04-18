@@ -1,7 +1,6 @@
 ---
 title: "Massage Therapy | Jidpha's Spa Treatments & Therapies | Worthing"
 description: "Experience world-class massage therapy with award-winning techniques from internationally recognised expert Jidapha Wilkinson. Book your transformative wellness journey today."
-preloadImg: '/assets/images/landing.jpg'
 permalink: '/'
 tags: 'sitemap' # Sitemap will use all pages in content/, due to content.json. As index.html is not included in content/ we need to manually add the sitemap tag to this page (only).
 eleventyNavigation:
@@ -15,6 +14,7 @@ eleventyNavigation:
     <link rel="stylesheet" href="/assets/css/local.css"/>
     <link rel="stylesheet" href="/assets/css/critical.css"/>
     <link rel="stylesheet" href="/assets/css/components.css"/>
+    <link rel="preload" as="image" href="{% getUrl "/assets/images/hero-1.jpg" | resize({width: 1920, height: 1714}) | avif %}" type="image/avif">
 
     <!-- Script for Netlify Identity -->
     <script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
@@ -83,7 +83,7 @@ eleventyNavigation:
 <section id="hero-2151">
     <div class="cs-container">
         <div class="cs-content">
-            <span class="cs-topper">Massge Therapy & Treatments in Worthing</span>
+            <span class="cs-topper">Massage Therapy & Treatments in Worthing</span>
             <h2 class="cs-title">Experience the Art of Thai Healing</h2>
             <p class="cs-text">
                 Discover a complete range of massage techniques perfected over decades by a world-renowned expert, bringing balance and renewal to your body and mind.
