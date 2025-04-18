@@ -7,6 +7,8 @@
     #pricing-995,
     #pricing-r-995 {
         padding: var(--sectionPadding);
+        background-color: #F6EAE3;
+        
 
         .cs-container {
             width: 100%;
@@ -84,7 +86,7 @@
                 content: "";
                 width: 100%;
                 height: 2px;
-                background: #e8e8e8;
+                background: #bababa;
                 opacity: 1;
                 position: absolute;
                 display: block;
@@ -102,7 +104,7 @@
             font-weight: 700;
             max-width: (400/16rem);
             padding-right: (8/16rem);
-            background-color: #fff;
+            background-color: #F6EAE3;
             color: var(--headerColor);
         }
 
@@ -111,7 +113,7 @@
             line-height: 1.5em;
             font-weight: 400;
             padding-left: (8/16rem);
-            background-color: #fff;
+            background-color: #F6EAE3;
             color: var(--headerColor);
         }
 
@@ -170,6 +172,7 @@
     body.dark-mode {
         #pricing-995,
         #pricing-r-995 {
+            background-color: var(--dark);
             .cs-title,
             .cs-header,
             .cs-menu-text,
@@ -185,6 +188,10 @@
             .cs-menu-text {
                 opacity: 0.8;
             }
+
+            .cs-topper {
+                color: var(--secondary);
+            }
         }
     }
 }
@@ -196,11 +203,30 @@
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
     #pricing-r-995 {
-        background-color: #f7f7f7;
+        background-color: #faf2ee;
+        position: relative;
+        z-index: 10;
+
+        &:before {
+            /* static tiled pattern */
+            content: "";
+            height: 100%;
+            width: 100%;
+            opacity: 0.08;
+            background: url("/assets/svgs/diagonal-lines.svg");
+            background-size: auto;
+            background-position: center;
+            background-repeat: repeat;
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
 
         .cs-header, .cs-price {
             /* same as the background color of the section */
-            background-color: #f7f7f7;
+            background-color: #faf2ee;
         }
     }
 }
@@ -210,7 +236,8 @@
     #pricing-r-995 {
         .cs-header,
         .cs-price {
-            background-color: #f7f7f7;
+            background-color: #faf2ee;
+            
         }
 
         .cs-picture {
@@ -224,11 +251,11 @@
 @media only screen and (min-width: 0rem) {
     body.dark-mode {
         #pricing-r-995 {
-            background-color: var(--medium);
+            background-color: #1a1a1a;
 
             .cs-header,
             .cs-price {
-                background-color: var(--medium);
+                background-color: #1a1a1a;
             }
         }
     }

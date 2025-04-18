@@ -5,7 +5,7 @@
 @media only screen and (min-width: 0rem) {
   #why-choose-1658 {
     padding: var(--sectionPadding);
-    background-color: #fcf7f7;
+    background-color: #F6EBE3;
     overflow: hidden;
     position: relative;
     z-index: 1;
@@ -77,17 +77,35 @@
     gap: clamp(2.5rem, 6vw, 4rem);
     position: relative;
     z-index: 1;
+    /* Solid background color */
+    /* Pattern with controlled opacity */
   }
   #why-choose-1658 .cs-wrapper:before {
-    /* white background */
     content: '';
     width: 100vw;
     height: 500%;
-    background: #fff;
-    opacity: 1;
+    background: #faf2ee;
     position: absolute;
     display: block;
     /* 40px - 140px */
+    top: clamp(2.5rem, 10vw, 8.75rem);
+    left: 50%;
+    z-index: -2;
+    transform: translateX(-50%);
+  }
+  #why-choose-1658 .cs-wrapper:after {
+    content: "";
+    width: 100vw;
+    height: 500%;
+    opacity: 0.08;
+    /* Control pattern opacity here */
+    background: url("/assets/svgs/diagonal-lines.svg");
+    background-size: auto;
+    background-position: center;
+    background-repeat: repeat;
+    position: absolute;
+    display: block;
+    /* Match the same positioning as :before */
     top: clamp(2.5rem, 10vw, 8.75rem);
     left: 50%;
     z-index: -1;
@@ -117,7 +135,7 @@
     margin-bottom: -1.75rem;
     opacity: 0.4;
     position: relative;
-    z-index: -1;
+    z-index: 1;
   }
   #why-choose-1658 .cs-review {
     --quoteColor: var(--primary);
@@ -205,6 +223,12 @@
   body.dark-mode #why-choose-1658 .cs-wrapper:before {
     background-color: var(--dark);
   }
+  body.dark-mode #why-choose-1658 .cs-quote {
+    opacity: 0.9;
+  }
+  body.dark-mode #why-choose-1658 .cs-review {
+    --quoteColor: var(--secondary);
+  }
 }
 /*-- -------------------------- -->
 <---          Services          -->
@@ -213,7 +237,7 @@
 @media only screen and (min-width: 0rem) {
   #services-1734 {
     padding: var(--sectionPadding);
-    background-color: #fcf7f7;
+    background-color: #F6EBE3;
     position: relative;
   }
   #services-1734 .cs-container {

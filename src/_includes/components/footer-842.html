@@ -7,16 +7,16 @@
         <!-- Logo Group -->
         <div class="cs-logo-group">
             <a aria-label="go back to home" class="cs-logo" href="/">
-                <img class="cs-logo-img" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/logo-white.svg" alt="logo" width="240" height="32">
+                <img class="cs-logo-img" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/logo-w.svg" alt="logo" width="240" height="32">
             </a>
             <div class="cs-social">
-                <a class="cs-social-link" aria-label="visit facebook profile" href="">
+                <a class="cs-social-link" aria-label="visit facebook profile" href="{{client.socials.facebook}}" target="_blank" rel="noopener">
                     <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/facebook.svg" alt="facebook" width="11" height="11">
                 </a>
-                <a class="cs-social-link" aria-label="visit twitter profile" href="">
-                    <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/twitter.svg" alt="twitter" width="6" height="11">
+                <a class="cs-social-link" aria-label="visit tiktok profile" href="{{client.socials.tiktok}}" target="_blank" rel="noopener">
+                    <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/tik-tok.svg" alt="TikTok" width="6" height="11">
                 </a>
-                <a class="cs-social-link" aria-label="visit instagram profile" href="">
+                <a class="cs-social-link" aria-label="visit instagram profile" href="{{client.socials.instagram}}" target="_blank" rel="noopener">
                     <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/instagram.svg" alt="instagram" width="11" height="11">
                 </a>
             </div>
@@ -32,20 +32,27 @@
                     <a class="cs-link" href="/about/">About Us</a>
                 </li>
                 <li class="cs-li">
-                    <a class="cs-link" href="/massages/">Massages</a>
+                    <a class="cs-link" href="/gallery/">Classes</a>
                 </li>
                 <li class="cs-li">
-                    <a class="cs-link" href="/reviews/">Reviews</a>
+                    <a class="cs-link" href="/contact/">Contact US</a>
                 </li>
                 <li class="cs-li">
-                    <a class="cs-link" href="/gallery/">Gallery</a>
+                    <a class="cs-link" href="/relaxation-wellness/">Relaxation & Wellness</a>
                 </li>
                 <li class="cs-li">
-                    <a class="cs-link" href="/blog/">Blog</a>
+                    <a class="cs-link" href="/therapeutic-treatments/">Therapeutic Treatments</a>
                 </li>
                 <li class="cs-li">
-                    <a class="cs-link" href="/contact/">Contact</a>
+                    <a class="cs-link" href="/specialty-techniques/">Speciality Techniques</a>
                 </li>
+                <li class="cs-li">
+                    <a class="cs-link" href="/traditional-eastern-therapies/">Traditional Therapies</a>
+                </li>
+                <li class="cs-li">
+                    <a class="cs-link" href="/beauty/">Beauty & Waxing</a>
+                </li>
+                
             </ul>
         </div>
         <div class="cs-ul-wrapper">
@@ -68,8 +75,7 @@
                     <a class="cs-link" href="" target="_blank">
                         <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/pin-w.svg" alt="pin icon" width="20" height="20">
                         {{client.address.lineOne}}<br>
-                        {{client.address.lineTwo}}<br>
-                        {{client.address.city}} {{client.address.zip}}
+                        {{client.address.city}}, {{client.address.zip}}
                     </a>
                 </li>
             </ul>

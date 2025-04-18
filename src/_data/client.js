@@ -1,24 +1,26 @@
 module.exports = {
-    "name": "Splendid Sites Web Designs",
-    "email": "help@splendidsites.com",
-    "phoneForTel": "555-779-4407",
-    "phoneFormatted": "(555) 779-4407",
-    "openingHours": "Mon-Sun: 9am-9pm",
-    "onlineBooking": "https://www.facebook.com/",
+    "name": "Jidpha's Spa Treatments & Therapies",
+    "email": "jidaphaspatreatment@gmail.com",
+    "phoneForTel": "+441903261738",
+    "phoneFormatted": "01903 261738",
+    "openingHours": "Mon-Fri: 10am-6pm",
+    "onlineBooking": "https://jidaphaspa.setmore.com",
     "address": {
-        "lineOne": "First Address Line",
-        "lineTwo": "Second Address Line",
-        "city": "Denver",
-        "state": "CO",
-        "zip": "80206",
-        "country": "US",
-        "mapLink": "https://maps.app.goo.gl/TEdS5KoLC9ZcULuQ6"
+        "lineOne": "99A Ashacre Ln",
+        "lineTwo": "",
+        "city": "Worthing",
+        "state": "",
+        "zip": "BN13 2DE",
+        "country": "UK",
+        "mapLink": "https://maps.app.goo.gl/xB4Gn6y5odCiDDcf8"
     },
     "socials": {
         "facebook": "https://www.facebook.com/",
         "instagram": "https://www.instagram.com/",
+        "tiktok": "https://www.tiktok.com/",
         "googleReview": "",
     },
     //! Make sure you include the file protocol (e.g. https://) and that NO TRAILING SLASH is included
     "domain": "https://www.example.com"
 };
+

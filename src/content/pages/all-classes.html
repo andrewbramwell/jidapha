@@ -1,0 +1,530 @@
+---
+title: "Classes | Jidpha's Spa Treatments & Therapies"
+description: "Learn authentic massage techniques from internationally recognized instructor Jidapha Wilkinson. Professional training courses for all skill levels available."
+permalink: 'all-class/'
+eleventyNavigation:
+    key: All Classes
+    order: 500
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/all-classes.css">
+    <link rel="preload" as="image" href="{% getUrl "/assets/images/banner.jpg" | resize({width: 2560, height: 1136}) | avif %}">
+{% endblock %}
+
+{% block body %}
+
+<!-- ============================================ -->
+<!--                    LANDING                   -->
+<!-- ============================================ -->
+
+<section id="int-hero">
+    <h1 id="home-h">All Classes</h1>
+    <picture>
+        <source media="(max-width: 600px)" srcset="/assets/images/banner-m.webp">
+        <source media="(min-width: 601px)" srcset="/assets/images/banner.webp">
+        <img aria-hidden="true" decoding="async" src="/assets/images/banner.jpg" alt="massage" loading="eager" width="2500" height="1667">
+    </picture>
+</section>
+
+<!-- ============================================ -->
+<!--                    Table                     -->
+<!-- ============================================ -->
+
+<section id="table-1835">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Classes</span>
+            <h2 class="cs-title">Join Our Upcoming Classes Now</h2>
+            <div class="cs-button-group">
+                <button class="cs-button cs-active" data-filter="one">
+                    Specialty
+                </button>
+                <button class="cs-button" data-filter="two">
+                    Therapeutic
+                </button>
+                <button class="cs-button" data-filter="three">
+                    Relaxation
+                </button>
+                <button class="cs-button" data-filter="four">
+                    Traditional 
+                </button>
+                <button class="cs-button" data-filter="five">
+                    VTCT Level 3
+                </button>
+                <button class="cs-button" data-filter="six">
+                    Master Classes
+                </button>
+            </div>
+        </div>
+        <!--Table 1 -->
+        <div class="cs-table-wrapper" data-category="one">
+            <table class="cs-table">
+                <thead class="cs-thead">
+                    <tr class="cs-tr">
+                        <!-- First column header removed -->
+                        <th class="cs-th" scope="col">Class Name</th>
+                        <th class="cs-th" scope="col">Class Duration</th>
+                        <th class="cs-th" scope="col">Price</th>
+                        <th class="cs-th" scope="col">Book</th>
+                    </tr>
+                </thead>
+                <tbody class="cs-tbody">
+                    <tr class="cs-tr">
+                        <!-- First column cell removed -->
+                        <td class="cs-td">Pregnancy Massage</td>
+                        <td class="cs-td">1-3 days (varies by class size)</td>
+                        <td class="cs-td">£350</td>
+                        <td class="cs-td">
+                            <a class="cs-cta" href="/contact/">Join Now</a>
+                        </td>
+                    </tr>
+                    <tr class="cs-tr">
+                        <!-- First column cell removed -->
+                        <td class="cs-td">Reflexology Foot</td>
+                        <td class="cs-td">1-3 days (varies by class size)</td>
+                        <td class="cs-td">£350</td>
+                        <td class="cs-td">
+                            <a class="cs-cta" href="/contact/">Join Now</a>
+                        </td>
+                    </tr>
+                    <tr class="cs-tr">
+                        <!-- First column cell removed -->
+                        <td class="cs-td">Indian Head/Head Spa Massage</td>
+                        <td class="cs-td">1-3 days (varies by class size)</td>
+                        <td class="cs-td">£500</td>
+                        <td class="cs-td">
+                            <a class="cs-cta" href="/contact/">Join Now</a>
+                        </td>
+                    </tr>
+                    <tr class="cs-tr">
+                        <!-- First column cell removed -->
+                        <td class="cs-td">Warm Bamboo Massage</td>
+                        <td class="cs-td">1-3 days (varies by class size)</td>
+                        <td class="cs-td">£550</td>
+                        <td class="cs-td">
+                            <a class="cs-cta" href="/contact/">Join Now</a>
+                        </td>
+                    </tr>
+                    <tr class="cs-tr">
+                        <!-- First column cell removed -->
+                        <td class="cs-td">Cupping/Stretching Massage</td>
+                        <td class="cs-td">1-3 days (varies by class size)</td>
+                        <td class="cs-td">£480</td>
+                        <td class="cs-td">
+                            <a class="cs-cta" href="/contact/">Join Now</a>
+                        </td>
+                    </tr>
+                    <tr class="cs-tr">
+                        <!-- First column cell removed -->
+                        <td class="cs-td">Gua-Sha Massage</td>
+                        <td class="cs-td">1-3 days (varies by class size)</td>
+                        <td class="cs-td">£330</td>
+                        <td class="cs-td">
+                            <a class="cs-cta" href="/contact/">Join Now</a>
+                        </td>
+                    </tr>
+                    <tr class="cs-tr">
+                        <!-- First column cell removed -->
+                        <td class="cs-td">Chair Massage</td>
+                        <td class="cs-td">1-3 days (varies by class size)</td>
+                        <td class="cs-td">£330</td>
+                        <td class="cs-td">
+                            <a class="cs-cta" href="/contact/">Join Now</a>
+                        </td>
+                    </tr>
+                    <tr class="cs-tr">
+                        <!-- First column cell removed -->
+                        <td class="cs-td">PRO-NUNU Natural Face-lift</td>
+                        <td class="cs-td">1-3 days (varies by class size)</td>
+                        <td class="cs-td">£1,599</td>
+                        <td class="cs-td">
+                            <a class="cs-cta" href="/contact/">Join Now</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!--Table 2 -->
+        <div class="cs-table-wrapper" data-category="two">
+        <table class="cs-table">
+            <thead class="cs-thead">
+                <tr class="cs-tr">
+                    <th class="cs-th" scope="col">Class Name</th>
+                    <th class="cs-th" scope="col">Class Duration</th>
+                    <th class="cs-th" scope="col">Price</th>
+                    <th class="cs-th" scope="col">Book</th>
+                </tr>
+            </thead>
+            <tbody class="cs-tbody">
+                <tr class="cs-tr">
+                    <td class="cs-td">Deep Tissues Massage</td>
+                    <td class="cs-td">1-3 days (varies by class size)</td>
+                    <td class="cs-td">£480</td>
+                    <td class="cs-td">
+                        <a class="cs-cta" href="/contact/">Join Now</a>
+                    </td>
+                </tr>
+                <tr class="cs-tr">
+                    <td class="cs-td">G5 Machine + Deep Tissue</td>
+                    <td class="cs-td">1-3 days (varies by class size)</td>
+                    <td class="cs-td">£596</td>
+                    <td class="cs-td">
+                        <a class="cs-cta" href="/contact/">Join Now</a>
+                    </td>
+                </tr>
+                <tr class="cs-tr">
+                    <td class="cs-td">Holistic/Therapeutic/Acupressure Massage</td>
+                    <td class="cs-td">1-3 days (varies by class size)</td>
+                    <td class="cs-td">£800</td>
+                    <td class="cs-td">
+                        <a class="cs-cta" href="/contact/">Join Now</a>
+                    </td>
+                </tr>
+                <tr class="cs-tr">
+                    <td class="cs-td">Lymphatic Drainage Massage</td>
+                    <td class="cs-td">1-3 days (varies by class size)</td>
+                    <td class="cs-td">£380</td>
+                    <td class="cs-td">
+                        <a class="cs-cta" href="/contact/">Join Now</a>
+                    </td>
+                </tr>
+                <tr class="cs-tr">
+                    <td class="cs-td">Full Body Lift-up - G5 Machine</td>
+                    <td class="cs-td">1-3 days (varies by class size)</td>
+                    <td class="cs-td">£596</td>
+                    <td class="cs-td">
+                        <a class="cs-cta" href="/contact/">Join Now</a>
+                    </td>
+                </tr>
+                <tr class="cs-tr">
+                    <td class="cs-td">Karsai Abbomen</td>
+                    <td class="cs-td">1-3 days (varies by class size)</td>
+                    <td class="cs-td">£599</td>
+                    <td class="cs-td">
+                        <a class="cs-cta" href="/contact/">Join Now</a>
+                    </td>
+                </tr>
+                <tr class="cs-tr">
+                    <td class="cs-td">Prostate Massage & Karsai Nei Tsang Therapeutic Massage</td>
+                    <td class="cs-td">1-3 days (varies by class size)</td>
+                    <td class="cs-td">£1,500</td>
+                    <td class="cs-td">
+                        <a class="cs-cta" href="/contact/">Join Now</a>
+                    </td>
+                </tr>
+                <tr class="cs-tr">
+                    <td class="cs-td">Infrared Light Therapy Red-light + Deep Tissue</td>
+                    <td class="cs-td">1-3 days (varies by class size)</td>
+                    <td class="cs-td">£699</td>
+                    <td class="cs-td">
+                        <a class="cs-cta" href="/contact/">Join Now</a>
+                    </td>
+                </tr>
+                <tr class="cs-tr">
+                    <td class="cs-td">Sports Massage Workshops</td>
+                    <td class="cs-td">1-3 days (varies by class size)</td>
+                    <td class="cs-td">£550</td>
+                    <td class="cs-td">
+                        <a class="cs-cta" href="/contact/">Join Now</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        </div>
+        <!--Table 3 -->
+        <div class="cs-table-wrapper" data-category="three">
+            <table class="cs-table">
+                <thead class="cs-thead">
+                    <tr class="cs-tr">
+                        <th class="cs-th" scope="col">Class Name</th>
+                        <th class="cs-th" scope="col">Class Duration</th>
+                        <th class="cs-th" scope="col">Price</th>
+                        <th class="cs-th" scope="col">Book</th>
+                    </tr>
+                </thead>
+                <tbody class="cs-tbody">
+                    <tr class="cs-tr">
+                        <td class="cs-td">Hot Stone Wellness Massage</td>
+                        <td class="cs-td">1-3 days (varies by class size)</td>
+                        <td class="cs-td">£350</td>
+                        <td class="cs-td">
+                            <a class="cs-cta" href="/contact/">Join Now</a>
+                        </td>
+                    </tr>
+                    <tr class="cs-tr">
+                        <td class="cs-td">WaveStone Massage</td>
+                        <td class="cs-td">1-3 days (varies by class size)</td>
+                        <td class="cs-td">£450</td>
+                        <td class="cs-td">
+                            <a class="cs-cta" href="/contact/">Join Now</a>
+                        </td>
+                    </tr>
+                    <tr class="cs-tr">
+                        <td class="cs-td">Aromatherapy</td>
+                        <td class="cs-td">1-3 days (varies by class size)</td>
+                        <td class="cs-td">£330</td>
+                        <td class="cs-td">
+                            <a class="cs-cta" href="/contact/">Join Now</a>
+                        </td>
+                    </tr>
+                    <tr class="cs-tr">
+                        <td class="cs-td">Lomi-Lomi</td>
+                        <td class="cs-td">1-3 days (varies by class size)</td>
+                        <td class="cs-td">£380</td>
+                        <td class="cs-td">
+                            <a class="cs-cta" href="/contact/">Join Now</a>
+                        </td>
+                    </tr>
+                    <tr class="cs-tr">
+                        <td class="cs-td">Swedish Massage</td>
+                        <td class="cs-td">1-3 days (varies by class size)</td>
+                        <td class="cs-td">£380</td>
+                        <td class="cs-td">
+                            <a class="cs-cta" href="/contact/">Join Now</a>
+                        </td>
+                    </tr>
+                    <tr class="cs-tr">
+                        <td class="cs-td">Body Balance Massage</td>
+                        <td class="cs-td">1-3 days (varies by class size)</td>
+                        <td class="cs-td">£450</td>
+                        <td class="cs-td">
+                            <a class="cs-cta" href="/contact/">Join Now</a>
+                        </td>
+                    </tr>
+                    <tr class="cs-tr">
+                        <td class="cs-td">Jidapha's Body Spa & Oil Massage Course</td>
+                        <td class="cs-td">1-3 days (varies by class size)</td>
+                        <td class="cs-td">£450</td>
+                        <td class="cs-td">
+                            <a class="cs-cta" href="/contact/">Join Now</a>
+                        </td>
+                    </tr>
+                    <tr class="cs-tr">
+                        <td class="cs-td">Manicure and Pedicure Spa</td>
+                        <td class="cs-td">1-3 days (varies by class size)</td>
+                        <td class="cs-td">£450</td>
+                        <td class="cs-td">
+                            <a class="cs-cta" href="/contact/">Join Now</a>
+                        </td>
+                    </tr>
+                    <tr class="cs-tr">
+                        <td class="cs-td">Waxing Full Body</td>
+                        <td class="cs-td">1-3 days (varies by class size)</td>
+                        <td class="cs-td">£650</td>
+                        <td class="cs-td">
+                            <a class="cs-cta" href="/contact/">Join Now</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!--Table 4 -->
+        <div class="cs-table-wrapper" data-category="four">
+            <table class="cs-table">
+                <thead class="cs-thead">
+                    <tr class="cs-tr">
+                        <th class="cs-th" scope="col">Class Name</th>
+                        <th class="cs-th" scope="col">Class Duration</th>
+                        <th class="cs-th" scope="col">Price</th>
+                        <th class="cs-th" scope="col">Book</th>
+                    </tr>
+                </thead>
+                <tbody class="cs-tbody">
+                    <tr class="cs-tr">
+                        <td class="cs-td">Thai Holistic Massage/Therapeutic Sen Sib</td>
+                        <td class="cs-td">1-3 days (varies by class size)</td>
+                        <td class="cs-td">£800</td>
+                        <td class="cs-td">
+                            <a class="cs-cta" href="/contact/">Join Now</a>
+                        </td>
+                    </tr>
+                    <tr class="cs-tr">
+                        <td class="cs-td">Thai Yoga Massage</td>
+                        <td class="cs-td">1-3 days (varies by class size)</td>
+                        <td class="cs-td">£550</td>
+                        <td class="cs-td">
+                            <a class="cs-cta" href="/contact/">Join Now</a>
+                        </td>
+                    </tr>
+                    <tr class="cs-tr">
+                        <td class="cs-td">Tok Sen Massage</td>
+                        <td class="cs-td">1-3 days (varies by class size)</td>
+                        <td class="cs-td">£550</td>
+                        <td class="cs-td">
+                            <a class="cs-cta" href="/contact/">Join Now</a>
+                        </td>
+                    </tr>
+                    <tr class="cs-tr">
+                        <td class="cs-td">Asian Massage/Western Massage</td>
+                        <td class="cs-td">1-3 days (varies by class size)</td>
+                        <td class="cs-td">£900</td>
+                        <td class="cs-td">
+                            <a class="cs-cta" href="/contact/">Join Now</a>
+                        </td>
+                    </tr>
+                    <tr class="cs-tr">
+                        <td class="cs-td">Balinese Massage</td>
+                        <td class="cs-td">1-3 days (varies by class size)</td>
+                        <td class="cs-td">£350</td>
+                        <td class="cs-td">
+                            <a class="cs-cta" href="/contact/">Join Now</a>
+                        </td>
+                    </tr>
+                    <tr class="cs-tr">
+                        <td class="cs-td">Thai Herbal Bolus Massage</td>
+                        <td class="cs-td">1-3 days (varies by class size)</td>
+                        <td class="cs-td">£480</td>
+                        <td class="cs-td">
+                            <a class="cs-cta" href="/contact/">Join Now</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!--Table 5 -->
+        <div class="cs-table-wrapper" data-category="five">
+            <table class="cs-table">
+                <thead class="cs-thead">
+                    <tr class="cs-tr">
+                        <th class="cs-th" scope="col">Class Name</th>
+                        <th class="cs-th" scope="col">Class Duration</th>
+                        <th class="cs-th" scope="col">Price</th>
+                        <th class="cs-th" scope="col">Book</th>
+                    </tr>
+                </thead>
+                <tbody class="cs-tbody">
+                    <tr class="cs-tr">
+                        <td class="cs-td">Swedish VTCT Level 3</td>
+                        <td class="cs-td">1-3 days (varies by class size)</td>
+                        <td class="cs-td">£1,150</td>
+                        <td class="cs-td">
+                            <a class="cs-cta" href="/contact/">Join Now</a>
+                        </td>
+                    </tr>
+                    <tr class="cs-tr">
+                        <td class="cs-td">Thai Traditional Massage VTCT Level 3</td>
+                        <td class="cs-td">1-3 days (varies by class size)</td>
+                        <td class="cs-td">£1,150</td>
+                        <td class="cs-td">
+                            <a class="cs-cta" href="/contact/">Join Now</a>
+                        </td>
+                    </tr>
+                    <tr class="cs-tr">
+                        <td class="cs-td">Beauty VTCT Level 3</td>
+                        <td class="cs-td">1-3 days (varies by class size)</td>
+                        <td class="cs-td">£1,699</td>
+                        <td class="cs-td">
+                            <a class="cs-cta" href="/contact/">Join Now</a>
+                        </td>
+                    </tr>
+                    <tr class="cs-tr">
+                        <td class="cs-td">Sports Massage VTCT Level 3</td>
+                        <td class="cs-td">1-3 days (varies by class size)</td>
+                        <td class="cs-td">£1,699</td>
+                        <td class="cs-td">
+                            <a class="cs-cta" href="/contact/">Join Now</a>
+                        </td>
+                    </tr>
+                    <tr class="cs-tr">
+                        <td class="cs-td">Teaching Course VTCT Level 3</td>
+                        <td class="cs-td">1-3 days (varies by class size)</td>
+                        <td class="cs-td">£1,699</td>
+                        <td class="cs-td">
+                            <a class="cs-cta" href="/contact/">Join Now</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!--Table 6 -->
+        <div class="cs-table-wrapper" data-category="six">
+            <table class="cs-table">
+                <thead class="cs-thead">
+                    <tr class="cs-tr">
+                        <th class="cs-th" scope="col">Class Name</th>
+                        <th class="cs-th" scope="col">Class Duration</th>
+                        <th class="cs-th" scope="col">Price</th>
+                        <th class="cs-th" scope="col">Book</th>
+                    </tr>
+                </thead>
+                <tbody class="cs-tbody">
+                    <tr class="cs-tr">
+                        <td class="cs-td">Holistic Deep Release & Stretch Medical Massage</td>
+                        <td class="cs-td">3 days</td>
+                        <td class="cs-td">£900</td>
+                        <td class="cs-td">
+                            <a class="cs-cta" href="/contact/">Join Now</a>
+                        </td>
+                    </tr>
+                    <tr class="cs-tr">
+                        <td class="cs-td">Dynamic Recovery Flow: Sport, Stretch & Deep Tissue Medical Massage</td>
+                        <td class="cs-td">3 days</td>
+                        <td class="cs-td">£900</td>
+                        <td class="cs-td">
+                            <a class="cs-cta" href="/contact/">Join Now</a>
+                        </td>
+                    </tr>
+                    <tr class="cs-tr">
+                        <td class="cs-td">Healing Flow: Sen Energy & Therapeutic Stretch Medical Massage</td>
+                        <td class="cs-td">3 days</td>
+                        <td class="cs-td">£900</td>
+                        <td class="cs-td">
+                            <a class="cs-cta" href="/contact/">Join Now</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+
+<script>
+    class CS_GalleryFilter {
+        filtersSelector = '.cs-button';
+        tableSelector = '.cs-table-wrapper';
+        activeClass = 'cs-active';
+        hiddenClass = 'cs-hidden';
+
+        constructor() {
+            this.$galleries = document.querySelectorAll(this.tableSelector);
+            const $filters = document.querySelectorAll(this.filtersSelector);
+
+            this.onClick($filters[0]);
+
+            for (const $filter of $filters) {
+                $filter.addEventListener('click', () => this.onClick($filter));
+            }
+        }
+
+        onClick($filter) {
+            this.filter($filter.dataset.filter);
+
+            const { activeClass } = this;
+
+            this.$activeFilter?.classList.remove(activeClass);
+            $filter.classList.add(activeClass);
+
+            this.$activeFilter = $filter;
+        }
+
+        filter(filter) {
+            const showAll = filter == 'all';
+            const { hiddenClass } = this;
+
+            for (const $gallery of this.$galleries) {
+                const show = showAll || $gallery.dataset.category == filter;
+                $gallery.classList.toggle(hiddenClass, !show);
+            }
+        }
+    }
+
+    new CS_GalleryFilter();
+    </script>
+                                
+
+                     
+
+{% endblock %}

@@ -6,10 +6,12 @@
 @media only screen and (min-width: 0rem) {
     #why-choose-1658 {
         padding: var(--sectionPadding);
-        background-color: #fcf7f7;
+        background-color: #F6EBE3;
         overflow: hidden;
         position: relative;
         z-index: 1;
+
+        
         
         .cs-container {
             width: 100%;
@@ -86,17 +88,35 @@
             gap: clamp(2.5rem, 6vw, 4rem);
             position: relative;
             z-index: 1;
-
+        
+            /* Solid background color */
             &:before {
-                /* white background */
                 content: '';
                 width: 100vw;
                 height: 500%;
-                background: #fff;
-                opacity: 1;
+                background: #faf2ee;
                 position: absolute;
                 display: block;
                 /* 40px - 140px */
+                top: clamp(2.5rem, 10vw, 8.75rem);
+                left: 50%;
+                z-index: -2;
+                transform: translateX(-50%);
+            }
+            
+            /* Pattern with controlled opacity */
+            &:after {
+                content: "";
+                width: 100vw;
+                height: 500%;
+                opacity: 0.08; /* Control pattern opacity here */
+                background: url("/assets/svgs/diagonal-lines.svg");
+                background-size: auto;
+                background-position: center;
+                background-repeat: repeat;
+                position: absolute;
+                display: block;
+                /* Match the same positioning as :before */
                 top: clamp(2.5rem, 10vw, 8.75rem);
                 left: 50%;
                 z-index: -1;
@@ -130,7 +150,7 @@
             margin-bottom: (-28/16rem);
             opacity: .4;
             position: relative;
-            z-index: -1;
+            z-index: 1;
         }
 
         .cs-review {
@@ -236,6 +256,17 @@
                     background-color: var(--dark);
                 }
             }
+
+            .cs-quote {
+                opacity: 0.9;
+                
+            }
+    
+            .cs-review {
+                --quoteColor: var(--secondary);
+                
+                
+            }
         }
     }
 }
@@ -248,7 +279,7 @@
 @media only screen and (min-width: 0rem) {
     #services-1734 {
         padding: var(--sectionPadding);
-        background-color: #fcf7f7;
+        background-color: #F6EBE3;
         position: relative;
 
         .cs-container {

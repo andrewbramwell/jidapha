@@ -6,6 +6,7 @@
   #pricing-995,
   #pricing-r-995 {
     padding: var(--sectionPadding);
+    background-color: #F6EAE3;
   }
   #pricing-995 .cs-container,
   #pricing-r-995 .cs-container {
@@ -85,7 +86,7 @@
     content: "";
     width: 100%;
     height: 2px;
-    background: #e8e8e8;
+    background: #bababa;
     opacity: 1;
     position: absolute;
     display: block;
@@ -102,7 +103,7 @@
     font-weight: 700;
     max-width: 25rem;
     padding-right: 0.5rem;
-    background-color: #fff;
+    background-color: #F6EAE3;
     color: var(--headerColor);
   }
   #pricing-995 .cs-price,
@@ -111,7 +112,7 @@
     line-height: 1.5em;
     font-weight: 400;
     padding-left: 0.5rem;
-    background-color: #fff;
+    background-color: #F6EAE3;
     color: var(--headerColor);
   }
   #pricing-995 .cs-menu-text,
@@ -162,6 +163,10 @@
 }
 /* Dark Mode */
 @media only screen and (min-width: 0rem) {
+  body.dark-mode #pricing-995,
+  body.dark-mode #pricing-r-995 {
+    background-color: var(--dark);
+  }
   body.dark-mode #pricing-995 .cs-title,
   body.dark-mode #pricing-r-995 .cs-title,
   body.dark-mode #pricing-995 .cs-header,
@@ -182,6 +187,10 @@
   body.dark-mode #pricing-r-995 .cs-menu-text {
     opacity: 0.8;
   }
+  body.dark-mode #pricing-995 .cs-topper,
+  body.dark-mode #pricing-r-995 .cs-topper {
+    color: var(--secondary);
+  }
 }
 /*-- -------------------------- -->
 <---     Pricing Reverse        -->
@@ -189,19 +198,37 @@
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
   #pricing-r-995 {
-    background-color: #f7f7f7;
+    background-color: #faf2ee;
+    position: relative;
+    z-index: 10;
+  }
+  #pricing-r-995:before {
+    /* static tiled pattern */
+    content: "";
+    height: 100%;
+    width: 100%;
+    opacity: 0.08;
+    background: url("/assets/svgs/diagonal-lines.svg");
+    background-size: auto;
+    background-position: center;
+    background-repeat: repeat;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
   }
   #pricing-r-995 .cs-header,
   #pricing-r-995 .cs-price {
     /* same as the background color of the section */
-    background-color: #f7f7f7;
+    background-color: #faf2ee;
   }
 }
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
   #pricing-r-995 .cs-header,
   #pricing-r-995 .cs-price {
-    background-color: #f7f7f7;
+    background-color: #faf2ee;
   }
   #pricing-r-995 .cs-picture {
     /* sends it to the right in the 2nd position */
@@ -211,10 +238,10 @@
 /* Dark Mode */
 @media only screen and (min-width: 0rem) {
   body.dark-mode #pricing-r-995 {
-    background-color: var(--medium);
+    background-color: #1a1a1a;
   }
   body.dark-mode #pricing-r-995 .cs-header,
   body.dark-mode #pricing-r-995 .cs-price {
-    background-color: var(--medium);
+    background-color: #1a1a1a;
   }
 }

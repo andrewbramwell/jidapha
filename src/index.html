@@ -1,6 +1,6 @@
 ---
-title: 'Pixel Perfect Websites | Code Stitch Web Designs | Denver, CO'
-description: 'Meta description for the page'
+title: "Massage Therapy | Jidpha's Spa Treatments & Therapies | Worthing"
+description: "Experience world-class massage therapy with award-winning techniques from internationally recognised expert Jidapha Wilkinson. Book your transformative wellness journey today."
 preloadImg: '/assets/images/landing.jpg'
 permalink: '/'
 tags: 'sitemap' # Sitemap will use all pages in content/, due to content.json. As index.html is not included in content/ we need to manually add the sitemap tag to this page (only).
@@ -75,27 +75,37 @@ eleventyNavigation:
 
 {% block body %}
 
+
 <!-- ============================================ -->
 <!--                    Hero                      -->
 <!-- ============================================ -->
 
-<section id="hero-1950">
+<section id="hero-2151">
     <div class="cs-container">
         <div class="cs-content">
-            <h1 class="cs-title">We do not cook, we create your emotions!</h1>
-            <div class="cs-flex-group">
-                <p class="cs-text">My passion for food has brought many new, fun and delicious dishes to the table.</p>
-                <a href="" class="cs-button-solid">Read More</a>
-            </div>
+            <span class="cs-topper">Massge Therapy & Treatments in Worthing</span>
+            <h2 class="cs-title">Experience the Art of Thai Healing</h2>
+            <p class="cs-text">
+                Discover a complete range of massage techniques perfected over decades by a world-renowned expert, bringing balance and renewal to your body and mind.
+            </p>
+            <a href="{{client.onlineBooking}}" target="_blank" rel="noopener" class="cs-button-solid">Book An Appointment</a>
         </div>
+         <picture class="cs-background">
+            <!--Mobile Image -->
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hero-1.jpg" | resize({width: 640, height: 640}) | avif %}" type="image/avif">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hero-1.jpg" | resize({width: 640, height: 640}) | webp %}" type="image/webp">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/hero-1.jpg" | resize({width: 640, height: 640}) | jpeg %}" type="image/jpeg">
+            <!--Tablet Image -->
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hero-1.jpg" | resize({width: 2046, height: 952}) | avif %}" type="image/avif">
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hero-1.jpg" | resize({width: 2046, height: 952}) | webp %}" type="image/webp">
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/hero-1.jpg" | resize({width: 2046, height: 952}) | jpeg %}" type="image/jpeg">
+            <!--Desktop Image -->
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hero-1.jpg" | resize({width: 1920, height: 1714}) | avif %}" type="image/avif">
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hero-1.jpg" | resize({width: 1920, height: 1714}) | webp %}" type="image/webp">
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/hero-1.jpg" | resize({width: 1920, height: 1714}) | jpeg %}" type="image/jpeg">
+            <img src="{% getUrl "/assets/images/hero-1.jpg" | resize({width: 1920, height: 1714}) | jpeg %}" alt="image description" width="960" height="857" loading="lazy" decoding="async" aria-hidden="true">
+        </picture>
     </div>
-
-    <!-- Background Image, there's a background image in the CSS for the parallax effect you'll need to change as well if you swap out our images -->
-    <picture class="cs-background">
-        <source media="(max-width: 600px)" srcset="/assets/images/hero.jpg">
-        <source media="(min-width: 601px)" srcset="/assets/images/hero.jpg">
-        <img decoding="async" src="/assets/images/hero.jpg" alt="restaurant" width="2250" height="1500" aria-hidden="true">
-    </picture>
 </section>
                                 
 
@@ -114,31 +124,30 @@ eleventyNavigation:
         <div class="cs-image-group">
             <picture class="cs-picture">
                 <!--Mobile Image -->
-                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/featured-1.jpg" | resize({width: 528, height: 474}) | avif %}" type="image/avif">
-                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/featured-1.jpg" | resize({width: 528, height: 474}) | webp %}" type="image/webp">
-                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/featured-1.jpg" | resize({width: 528, height: 474}) | jpeg %}" type="image/jpeg">
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/about-1.jpg" | resize({width: 528, height: 474}) | avif %}" type="image/avif">
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/about-1.jpg" | resize({width: 528, height: 474}) | webp %}" type="image/webp">
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/about-1.jpg" | resize({width: 528, height: 474}) | jpeg %}" type="image/jpeg">
                 <!--Tablet Image -->
-                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/featured-1.jpg" | resize({width: 1552, height: 474}) | avif %}" type="image/avif">
-                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/featured-1.jpg" | resize({width: 1552, height: 474}) | webp %}" type="image/webp">
-                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/featured-1.jpg" | resize({width: 1552, height: 474}) | jpeg %}" type="image/jpeg">
+                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/about-1.jpg" | resize({width: 1552, height: 474}) | avif %}" type="image/avif">
+                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/about-1.jpg" | resize({width: 1552, height: 474}) | webp %}" type="image/webp">
+                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/about-1.jpg" | resize({width: 1552, height: 474}) | jpeg %}" type="image/jpeg">
                 <!--Desktop Image -->
-                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/featured-1.jpg" | resize({width: 1028, height: 872}) | avif %}" type="image/avif">
-                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/featured-1.jpg" | resize({width: 1028, height: 872}) | webp %}" type="image/webp">
-                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/featured-1.jpg" | resize({width: 1028, height: 872}) | jpeg %}" type="image/jpeg">
-                <img src="{% getUrl "/assets/images/featured-1.jpg" | resize({width: 1028, height: 872}) | jpeg %}" alt="about us image" width="522" height="461" loading="lazy" decoding="async" aria-hidden="true">
+                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/about-1.jpg" | resize({width: 1028, height: 872}) | avif %}" type="image/avif">
+                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/about-1.jpg" | resize({width: 1028, height: 872}) | webp %}" type="image/webp">
+                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/about-1.jpg" | resize({width: 1028, height: 872}) | jpeg %}" type="image/jpeg">
+                <img src="{% getUrl "/assets/images/about-1.jpg" | resize({width: 1028, height: 872}) | jpeg %}" alt="about us image" width="522" height="461" loading="lazy" decoding="async" aria-hidden="true">
             </picture>
-            <img class="cs-seal" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/SideBySide/seal2.svg" alt="seal" width="190" height="182">
         </div>
         <div class="cs-content">
-            <span class="cs-topper">Our Story</span>
-            <h2 class="cs-title">Who We Are</h2>
+            <span class="cs-topper">About Us</span>
+            <h2 class="cs-title">Meet Your Therapist</h2>
             <p class="cs-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
+                With over 16 years of experience and 11 world championship medals, our founder Jidapha Wilkinson brings unparalleled expertise to every massage treatment we offer.
                 <!--Creates the space between p tags on mobile-->
                 <span class="cs-spacer"></span>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
+                Internationally recognised as "The Queen of Asian Massage," Jidapha combines her award-winning techniques with a deeply personalised approach to create transformative healing experiences.
             </p>
-            <a href="" class="cs-button-solid">Reserve Your Table</a>
+            <a href="/about/" class="cs-button-solid">About Us</a>
         </div>
     </div>
 </section>
@@ -151,19 +160,19 @@ eleventyNavigation:
     <div class="cs-container">
         <div class="cs-content">
             <div class="cs-flex-group">
-                <span class="cs-topper">Our Services</span>
-                <h2 class="cs-title">Professional Construction Services</h2>
+                <span class="cs-topper">Massages and Treatments</span>
+                <h2 class="cs-title">Expert Therapy for Body, Mind and Spirit</h2>
             </div>
             <p class="cs-text">
-                Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.
+                Discover our comprehensive range of treatments, each delivered to your specific needs. From targeted therapy to deep relaxation, we offer holistic solutions to enhance your wellbeing.
             </p>
         </div>
         <ul class="cs-card-group">
             <li class="cs-item">
-                <a href="" class="cs-link">
+                <a href="/specialty-techniques/" class="cs-link">
                     <h3 class="cs-h3">Speciality Techniques</h3>
                     <p class="cs-item-text">
-                        We’ve helped thousands of organizations transform to become relevant of helped thousands.
+                        Advanced methods including Pregnancy Massage, Reflexology, Indian Head Massage, Warm Bamboo, Cupping and Gua-Sha. Each designed for specific therapeutic goals.
                     </p>
                 </a>
                 <picture class="cs-item-background">
@@ -183,10 +192,10 @@ eleventyNavigation:
                 </picture>
             </li>
             <li class="cs-item">
-                <a href="" class="cs-link">
+                <a href="/therapeutic-treatments/" class="cs-link">
                     <h3 class="cs-h3">Theraputic Treatments</h3>
                     <p class="cs-item-text">
-                        We’ve helped thousands of organizations transform to become relevant of helped thousands.
+                        Professional solutions for pain including Deep Tissue Massage, Myofascial Release, G5 Technology, Acupuncture, Lymphatic Drainage, and specialized Abdominal therapies.
                     </p>
                 </a>
                <picture class="cs-item-background">
@@ -206,10 +215,10 @@ eleventyNavigation:
                 </picture>
             </li>
             <li class="cs-item">
-                <a href="" class="cs-link">
+                <a href="/relaxation-wellness/" class="cs-link">
                     <h3 class="cs-h3">Relaxation & Wellness</h3>
                     <p class="cs-item-text">
-                        We’ve helped thousands of organizations transform to become relevant of helped thousands.
+                        Stress-relieving experiences with Hot Stone Therapy, Western Fusion, 4-Hand Massage, Aromatherapy, Lomi Lomi, and Swedish techniques for complete restoration.
                     </p>
                 </a>
                  <picture class="cs-item-background">
@@ -229,26 +238,26 @@ eleventyNavigation:
                 </picture>
             </li>
             <li class="cs-item">
-                <a href="" class="cs-link">
-                    <h3 class="cs-h3">Traditional Eastern Therapies</h3>
+                <a href="/traditional-eastern-therapies/" class="cs-link">
+                    <h3 class="cs-h3">Traditional Therapies</h3>
                     <p class="cs-item-text">
-                        We’ve helped thousands of organizations transform to become relevant of helped thousands.
+                        Authentic Asian practices including Thai Massage, Thai Yoga, Tok Sen, Asian Fusion, and Balinese techniques focusing on energy pathways and whole-body harmony.
                     </p>
                 </a>
                  <picture class="cs-item-background">
                     <!--Mobile Image -->
-                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/featured-1.jpg" | resize({width: 576, height: 496}) | avif %}" type="image/avif">
-                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/featured-1.jpg" | resize({width: 576, height: 496}) | webp %}" type="image/webp">
-                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/featured-1.jpg" | resize({width: 576, height: 496}) | jpeg %}" type="image/jpeg">
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/24.jpg" | resize({width: 576, height: 496}) | avif %}" type="image/avif">
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/24.jpg" | resize({width: 576, height: 496}) | webp %}" type="image/webp">
+                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/24.jpg" | resize({width: 576, height: 496}) | jpeg %}" type="image/jpeg">
                     <!--Tablet Image -->
-                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/featured-1.jpg" | resize({width: 970, height: 612}) | avif %}" type="image/avif">
-                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/featured-1.jpg" | resize({width: 970, height: 612}) | webp %}" type="image/webp">
-                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/featured-1.jpg" | resize({width: 970, height: 612}) | jpeg %}" type="image/jpeg">
+                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/24.jpg" | resize({width: 970, height: 612}) | avif %}" type="image/avif">
+                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/24.jpg" | resize({width: 970, height: 612}) | webp %}" type="image/webp">
+                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/24.jpg" | resize({width: 970, height: 612}) | jpeg %}" type="image/jpeg">
                     <!--Desktop Image -->
-                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/featured-1.jpg" | resize({width: 610, height: 796}) | avif %}" type="image/avif">
-                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/featured-1.jpg" | resize({width: 610, height: 796}) | webp %}" type="image/webp">
-                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/featured-1.jpg" | resize({width: 610, height: 796}) | jpeg %}" type="image/jpeg">
-                    <img src="{% getUrl "/assets/images/featured-1.jpg" | resize({width: 610, height: 796}) | jpeg %}" alt="Traditional Eastern Therapies" width="413" height="374" loading="lazy" decoding="async" aria-hidden="true">
+                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/24.jpg" | resize({width: 610, height: 796}) | avif %}" type="image/avif">
+                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/24.jpg" | resize({width: 610, height: 796}) | webp %}" type="image/webp">
+                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/24.jpg" | resize({width: 610, height: 796}) | jpeg %}" type="image/jpeg">
+                    <img src="{% getUrl "/assets/images/24.jpg" | resize({width: 610, height: 796}) | jpeg %}" alt="Traditional Eastern Therapies" width="413" height="374" loading="lazy" decoding="async" aria-hidden="true">
                 </picture>
             </li>
         </ul>
@@ -257,7 +266,7 @@ eleventyNavigation:
                                 
 
 <!-- ============================================ -->
-<!--              Training Courses                -->
+<!--              Beauty and waxing               -->
 <!-- ============================================ -->
 
 <section id="sbsr-946">
@@ -311,105 +320,25 @@ eleventyNavigation:
                 <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/eyebrow.jpg" | resize({width: 562, height: 560}) | jpeg %}" type="image/jpeg">
                 <img src="{% getUrl "/assets/images/eyebrow.jpg" | resize({width: 562, height: 560}) | jpeg %}" alt="image description" width="281" height="280" loading="lazy" decoding="async" >
             </picture>
-            <!--Seal-->
-            <img class="cs-seal" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/seal.svg" alt="seal" width="150" height="150">
         </div>
         <div class="cs-content">
-            <span class="cs-topper">Hair Salon Services</span>
-            <h2 class="cs-title">Life Is More Beautiful When You Meet The Right Hairdresser</h2>
+            <span class="cs-topper">Beauty & Waxing </span>
+            <h2 class="cs-title">Beauty Treatments & Waxing Services</h2>
             <p class="cs-text">
-                The Hair salon Stitch pack is designed specifically for a hairdressers, salons, and beauty centers, with a modern high end feel to match the expectations for design in this industry. These Stitches are great for anything and everything hair and beauty but can also be repurposed for anything high end or luxury.
+                Our comprehensive beauty menu includes professional permanent makeup applications, eyebrow enhancements, and precise eyeliner and lip tattoos for effortless everyday beauty.
             </p>
             <p class="cs-text">
-                The Hair salon Stitch pack is designed specifically for a hairdressers, salons, and beauty centers, with a modern high end feel to match the expectations for design in this industry. These Stitches are great for anything and everything hair and beauty but can also be repurposed for anything high end or luxury.
+                We offer a complete range of waxing services for both women and gentlemen, from facial grooming to full-body treatments, all performed with exceptional care and attention to detail.
             </p>
-            <a href="" class="cs-button-solid" aria-label="learn more about us">Learn More</a>
+             <p class="cs-text">
+                All treatments are performed by certified specialists with advanced training, ensuring safe, hygienic procedures and consistently excellent results.
+            </p>
+            <a href="/beauty/" class="cs-button-solid" aria-label="learn more about us">Beauty & Waxing</a>
         </div>
     </div>
 </section>
 
-<!-- ============================================ -->
-<!--                    FAQ                       -->
-<!-- ============================================ -->
 
-<section id="faq-1108">
-    <div class="cs-container">
-        <div class="cs-content">
-            <span class="cs-topper">FAQ’s</span>
-            <h2 class="cs-title">Frequently Asked Questions</h2>
-            <picture class="cs-picture">
-                <!--Mobile Image -->
-                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/faq.jpg" | resize({width: 716, height: 720}) | avif %}" type="image/avif">
-                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/faq.jpg" | resize({width: 716, height: 720}) | webp %}" type="image/webp">
-                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/faq.jpg" | resize({width: 716, height: 720}) | jpeg %}" type="image/jpeg">
-                <!--Tablet Image -->
-                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/faq.jpg" | resize({width: 1044, height: 800}) | avif %}" type="image/avif">
-                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/faq.jpg" | resize({width: 1044, height: 800}) | webp %}" type="image/webp">
-                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/faq.jpg" | resize({width: 1044, height: 800}) | jpeg %}" type="image/jpeg">
-                <!--Desktop Image -->
-                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/faq.jpg" | resize({width: 1044, height: 800}) | avif %}" type="image/avif">
-                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/faq.jpg" | resize({width: 1044, height: 800}) | webp %}" type="image/webp">
-                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/faq.jpg" | resize({width: 1044, height: 800}) | jpeg %}" type="image/jpeg">
-                <img src="{% getUrl "/assets/images/faq.jpg" | resize({width: 1044, height: 800}) | jpeg %}" alt="massage products" width="1044" loading="lazy" decoding="async" aria-hidden="true">
-                </picture>
-        </div>
-        <div class="cs-flex-group">
-            <ul class="cs-faq-group">
-                <!-- Active class added as default -->
-                <li class="cs-faq-item active">
-                    <button class="cs-button">
-                        <span class="cs-button-text">
-                            Do you have experience with car like mine?
-                        </span>
-                    </button>
-                    <p class="cs-item-p">
-                        In the U.S., the terms lawyer and attorney are often used interchangeably. A lawyer provides legal services such as giving legal advice, writing legal documents and providing policy counsel to governments. An attorney, on top of these things also holds a state or regional license to represent clients in a law court.
-                    </p>
-                </li>
-                <li class="cs-faq-item">
-                    <button class="cs-button">
-                        <span class="cs-button-text">
-                            What is your plan cancellation policy?
-                        </span>
-                    </button>
-                    <p class="cs-item-p">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit convallis nunc neque, bibendum pulvinar vitae commodo velit. Proin diam tortor sed malesuada nunc, habitant. Dignissim ipsum porta enim, magna urna, quam. 
-                    </p>
-                </li>
-                <li class="cs-faq-item">
-                    <button class="cs-button">
-                        <span class="cs-button-text">
-                            What professional certifications you have?
-                        </span>
-                    </button>
-                    <p class="cs-item-p">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit convallis nunc neque, bibendum pulvinar vitae commodo velit. Proin diam tortor sed malesuada nunc, habitant. Dignissim ipsum porta enim, magna urna, quam. 
-                    </p>
-                </li>
-                <li class="cs-faq-item">
-                    <button class="cs-button">
-                        <span class="cs-button-text">
-                            What professional certifications you have?
-                        </span>
-                    </button>
-                    <p class="cs-item-p">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit convallis nunc neque, bibendum pulvinar vitae commodo velit. Proin diam tortor sed malesuada nunc, habitant. Dignissim ipsum porta enim, magna urna, quam. 
-                    </p>
-                </li>
-                <li class="cs-faq-item">
-                    <button class="cs-button">
-                        <span class="cs-button-text">
-                            How much air pressure should I put my tires?
-                        </span>
-                    </button>
-                    <p class="cs-item-p">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit convallis nunc neque, bibendum pulvinar vitae commodo velit. Proin diam tortor sed malesuada nunc, habitant. Dignissim ipsum porta enim, magna urna, quam. 
-                    </p>
-                </li>
-            </ul>
-        </div>
-    </div>
-</section>
 
 <!-- ============================================ -->
 <!--                   Reviews                    -->
@@ -419,30 +348,29 @@ eleventyNavigation:
     <div class="cs-container">
         <div class="cs-content">
             <span class="cs-topper">Testimonials</span>
-            <h2 class="cs-title">Trusted by Thousand of People & Companies</h2>
+            <h2 class="cs-title">Experiences From Those Who Know Us Best</h2>
             <p class="cs-text">
-                Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.
+                Discover what makes us special through the words of our valued clients. Their stories highlight the transformative effects of our professional treatments and personalised care approach.
             </p>
         </div>
         <ul class="cs-card-group">
             <li class="cs-item">
-                <img class="cs-icon" src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/quote-blue.svg" alt="quote icon" aria-hidden="true" width="40" height="38" loading="lazy" decoding="async">
-                <h3 class="cs-h3">Loving the color!</h3>
+                <img class="cs-icon" src="/assets/svgs/quote.svg" alt="quote icon" aria-hidden="true" width="40" height="38" loading="lazy" decoding="async">
+                <h3 class="cs-h3">The Best I've Experienced!</h3>
                 <p class="cs-item-text">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores iste vitae, aliquam temporibus modi libero dolorem rerum? Dolore soluta eligendi mollitia. Doloribus et exercitationem cupiditate?
+                    I have visited several times 2024/5 and each time has been relaxing with soothing music with a lovely warm and welcoming environment! Quality of treatment is second to none having been treated for sciatica and knotted muscles for years by many places. I can say without hesitation that Jidapha's Spa is the best I've experienced and is highly recommended.
                 </p>
-                <span class="cs-name">Daniel</span>
+                <span class="cs-name">Ian Jacklin</span>
             </li>
             <li class="cs-item">
-                <img class="cs-icon" src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/quote-blue.svg" alt="quote icon" aria-hidden="true" width="40" height="38" loading="lazy" decoding="async">
-                <h3 class="cs-h3">Affordable</h3>
+                <img class="cs-icon" src="/assets/svgs/quote.svg" alt="quote icon" aria-hidden="true" width="40" height="38" loading="lazy" decoding="async">
+                <h3 class="cs-h3">Highly Recommended!</h3>
                 <p class="cs-item-text">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores iste vitae, aliquam temporibus modi libero dolorem rerum? Dolore soluta eligendi mollitia. Doloribus et exercitationem cupiditate?
+                    Awesome and highly recommend this. A warm welcome, relaxing decor and soothing music provide a healing atmosphere. I arrived with the troubles of my world and left feeling I had a spiritual mindful experience in addition to immense pain relief. So thankful.
                 </p>
-                <span class="cs-name">Daniel</span>
+                <span class="cs-name">Amy Keers</span>
             </li>
         </ul>
-        <a href="" class="cs-button-solid" aria-label="learn more about us">Leave A Review</a>
     </div>
 </section>
                                               

@@ -9,6 +9,7 @@
 @media only screen and (min-width: 0rem) {
     #content-1450 {
         padding: var(--sectionPadding);
+        background-color: #faf2ee;
         
         .cs-container {
             width: 100%;
@@ -110,6 +111,27 @@
         text-align: center;
         height: auto;
         padding: var(--sectionPadding);
+        background-color: #faf2ee;
+        position: relative;
+        z-index: 10;
+
+        &:before {
+            /* static tiled pattern */
+            content: "";
+            height: 100%;
+            width: 100%;
+            opacity: 0.08;
+            background: url("/assets/svgs/diagonal-lines.svg");
+            background-size: auto;
+            background-position: center;
+            background-repeat: repeat;
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+
 
         .cs-container {
             width: 100%;
@@ -195,7 +217,7 @@
             /* 32px - 48px left & right */
             padding: clamp(1rem, 3vw, 1.75rem) clamp(2rem, 4vw, 3rem);
             border-radius: (70/16rem);
-            background-color: #f3f3f3;
+            background-color: #F6EAE3;
             border: 1px solid #b4b2c7;
             box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
             display: inline-flex;
@@ -371,7 +393,7 @@
             /* 8px - 12px */
             padding: 0 clamp(0.5rem, 1vw, 0.75rem);
             color: var(--primary);
-            background-color: #fff;
+            background-color: #faf2ee;
             border-radius: (80/16rem);
             border: 1px solid #b4b2c7;
             display: flex;
