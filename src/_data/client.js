@@ -15,12 +15,12 @@ module.exports = {
         "mapLink": "https://maps.app.goo.gl/xB4Gn6y5odCiDDcf8"
     },
     "socials": {
-        "facebook": "https://www.facebook.com/",
+        "facebook": "https://www.facebook.com/profile.php?id=100057380593008",
         "instagram": "https://www.instagram.com/",
         "tiktok": "https://www.tiktok.com/",
-        "googleReview": "",
+        "googleReview": "https://g.page/r/CYMYLxp1fzfHEBM/review",
     },
     //! Make sure you include the file protocol (e.g. https://) and that NO TRAILING SLASH is included
-    "domain": "https://www.example.com"
+    "domain": "https://jidaphas-spa.com"
 };
 
